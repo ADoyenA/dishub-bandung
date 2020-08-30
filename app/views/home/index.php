@@ -1,7 +1,6 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-dhskfjhlkfhalksdfhj
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
