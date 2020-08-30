@@ -7,4 +7,4 @@ define('BASEURL', 'http://localhost/dishub-bandung');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'ESIAN BOY');
+define('DB_NAME', 'dishub-bandung');
