@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Sailor Bootstrap Template - Index</title>
+    <title><?= $data['judul']; ?></title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
 
@@ -53,8 +53,8 @@
 
                     <li class="drop-down"><a href="#">About</a>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Team</a></li>
+                            <li><a href="<?= BASEURL; ?>/about">About Us</a></li>
+                            <li><a href="<?= BASEURL; ?>/team">Team</a></li>
                             <li><a href="testimonials.html">Testimonials</a></li>
 
                             <li class="drop-down"><a href="#">Deep Drop Down</a>
@@ -69,11 +69,11 @@
                         </ul>
                     </li>
 
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="<?= BASEURL; ?>/services">Services</a></li>
+                    <li><a href="<?= BASEURL; ?>/portofolio">Portfolio</a></li>
+                    <li><a href="<?= BASEURL; ?>/pricing">Pricing</a></li>
+                    <li><a href="<?= BASEURL; ?>/blog">Blog</a></li>
+                    <li><a href="<?= BASEURL; ?>/contact">Contact</a></li>
 
                 </ul>
 
