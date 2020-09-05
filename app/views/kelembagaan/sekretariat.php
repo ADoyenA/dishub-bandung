@@ -15,7 +15,7 @@
     </section><!-- End Breadcrumbs -->
     <section id="sekretariat" class="sekretariat">
         <div class="container">
-            <h1>Ini Halaman Sekretariat</h1>
+            <h1><?= $data['isi']; ?></h1>
         </div>
     </section>
 </main>

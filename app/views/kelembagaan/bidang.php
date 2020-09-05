@@ -15,7 +15,7 @@
     </section><!-- End Breadcrumbs -->
     <section id="bidang" class="bidang">
         <div class="container">
-            <h1>Ini Halaman Bidang</h1>
+        <h1><?= $data['isi']; ?></h1>
         </div>
     </section>
 </main>

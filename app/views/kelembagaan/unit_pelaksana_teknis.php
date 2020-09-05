@@ -15,7 +15,7 @@
     </section><!-- End Breadcrumbs -->
     <section id="unit_pelaksanan_teknis" class="unit_pelaksanan_teknis">
         <div class="container">
-            <h1>Ini Halaman Unit Pelaksanan Teknis</h1>
+        <h1><?= $data['isi']; ?></h1>
         </div>
     </section>
 </main>

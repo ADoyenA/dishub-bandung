@@ -2,7 +2,8 @@
 
 class Kelembagaan extends Controller{
     public function bidang(){
-        $data['judul'] = 'Dishub Bandung';
+        $data['judul'] = 'Bidang-Bidang';
+        $data['isi'] = 'Ini Halaman Bidang-Bidang';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
         $this->view('kelembagaan/bidang', $data);
@@ -11,7 +12,8 @@ class Kelembagaan extends Controller{
     }
 
     public function sekretariat(){
-        $data['judul'] = 'Dishub Bandung';
+        $data['judul'] = 'Sekretariat';
+        $data['isi'] = 'Ini Halaman Sekretariat';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
         $this->view('kelembagaan/sekretariat', $data);
@@ -20,7 +22,8 @@ class Kelembagaan extends Controller{
     }
 
     public function unit_pelaksana_teknis(){
-        $data['judul'] = 'Dishub Bandung';
+        $data['judul'] = 'Unit Pelaksana Teknis';
+        $data['isi'] = 'Ini Halaman Unit Pelaksana Teknis';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
         $this->view('kelembagaan/unit_pelaksana_teknis', $data);
