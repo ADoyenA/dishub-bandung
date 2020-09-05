@@ -51,21 +51,14 @@
                 <ul>
                     <li class="active"><a href="<?= BASEURL; ?>/home">Home</a></li>
 
-                    <li class="drop-down"><a href="#">About</a>
+                    <li class="drop-down"><a href="#">Profil</a>
                         <ul>
-                            <li><a href="<?= BASEURL; ?>/about">About Us</a></li>
-                            <li><a href="<?= BASEURL; ?>/team">Team</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-
-                            <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="<?= BASEURL; ?>/profil/sejarah">Sejarah/Selayang Pandang</a></li>
+                            <li><a href="<?= BASEURL; ?>/profil/struktur">Struktur Organisasi</a></li>
+                            <li><a href="<?= BASEURL; ?>/profil/tupoksi">Tupoksi</a></li>
+                            <li><a href="<?= BASEURL; ?>/profil/profilPnjbt">Profil Penjabat</a></li>
+                            <li><a href="<?= BASEURL; ?>/profil/maklumat">Maklumat Pelayanan/Standar Pelayanan</a></li>
+                            <li><a href="<?= BASEURL; ?>/profil/renstra">RENSTRA/RENJA</a></li>
                         </ul>
                     </li>
 
