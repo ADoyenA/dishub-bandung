@@ -5,10 +5,10 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2>Contact</h2>
+      <h2>Kontak</h2>
       <ol>
         <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-        <li>Contact</li>
+        <li>Kontak</li>
       </ol>
     </div>
 
