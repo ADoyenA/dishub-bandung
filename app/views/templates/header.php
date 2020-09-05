@@ -69,7 +69,13 @@
                         </ul>
                     </li>
 
-                    <li><a href="<?= BASEURL; ?>/services">Services</a></li>
+                    <li class="drop-down"><a href="">Kelembagaan</a>
+                        <ul>
+                            <li><a href="<?= BASEURL; ?>/kelembagaan/sekretariat">Sekretariat</a></li>
+                            <li><a href="<?= BASEURL; ?>/kelembagaan/bidang">Bidang-Bidang</a></li>
+                            <li><a href="<?= BASEURL; ?>/kelembagaan/unit_pelaksana_teknis">Unit Pelaksana Teknis</a></li>
+                        </ul>
+                    </li>
                     <li><a href="<?= BASEURL; ?>/portofolio">Portfolio</a></li>
                     <li><a href="<?= BASEURL; ?>/pricing">Pricing</a></li>
                     <li><a href="<?= BASEURL; ?>/blog">Blog</a></li>
