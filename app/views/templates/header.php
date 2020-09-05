@@ -79,7 +79,7 @@
                     <li><a href="<?= BASEURL; ?>/portofolio">Portfolio</a></li>
                     <li><a href="<?= BASEURL; ?>/pricing">Pricing</a></li>
                     <li><a href="<?= BASEURL; ?>/blog">Blog</a></li>
-                    <li><a href="<?= BASEURL; ?>/contact">Contact</a></li>
+                    <li><a href="<?= BASEURL; ?>/kontak">Kontak</a></li>
 
                 </ul>
 
