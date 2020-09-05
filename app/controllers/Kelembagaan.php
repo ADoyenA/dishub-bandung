@@ -1,9 +1,39 @@
 <?php
 
 class Kelembagaan extends Controller{
+
     public function bidang(){
         $data['judul'] = 'Bidang-Bidang';
-        $data['isi'] = 'Ini Halaman Bidang-Bidang';
+        $data['data'] = [
+            'subJudulA' => 'A.  BIDANG PERENCANAAN DAN PEMBINAAN TRANSPORTASI',
+            'sjA-p1' => 'Bidang Perencanaan dan Pembinaan Transportasi (PPT) yang dipimpin oleh seorang Kepala Bidang mempunyai tugas melaksanakan sebagian tugas Kepala Dinas lingkup Perencanaan dan Pembinaan Transportasi.',
+            'sjA-p2' => 'Bidang Perencanaan dan Pembinaan Transportasi memilki fungsi sebagai penyusun rencana dan program kerja lingkup perencanaan dan pembinaan transportasi, seperti halnya perencanaan dan evaluasi trayek angkutan untuk Trans Metro Bandung, Bus Sekolah, Bandros. Bidang PPT juga menjalankan fungsi sebagai pembinaan transportasi melalui pelaksanaan program kelaikan dan keselamatan transportasi, salah satunya ialah kegiatan pengujian kendaraan bermotor atau sering disebut Uji KIR.',
+            'sjA-p3' => 'Dalam menjalankan tugas, fungsi dan uraian tugas sebagaimana dimaksud, Kepala Bidang Perencanaan dan Pembinaan Transportasi dibantu oleh beberapa seksi yang terdiri dari:',
+            'sjA-no1' => 'Seksi Perencanaan dan Evaluasi Transportasi',
+            'sjA-no2' => 'Seksi Kelaikan dan Keselamatan Transportasi, dan',
+            'sjA-no3' => 'Seksi Bina Transportasi.',
+            'subJudulB' => 'B.  BIDANG MANAJEMEN TRANSPORTASI DAN PARKIR',
+            'sjB-p1' => 'Bidang Manajemen Transportasi dan Parkir (MTP) yang dipimpin oleh seorang Kepala Bidang mempunyai tugas melaksanakan sebagian tugas Kepala Dinas lingkup manajemen transportasi dan parkir.',
+            'sjB-p2' => 'Bidang Manajemen Transportasi dan Parkir adalah bidang yang memiliki fungsi sebagai penyusun rencana dan program kerja lingkup manajemen transportasi dan parkir. Salah satu kegiatan yang dilakukan ialah pengaturan perparkiran Kota Bandung baik on-street parking maupun off-street parking yang berkoordinasi dengan UPT Parkir Dinas Perhubungan Kota Bandung. Bidang MTP memiliki Seksi Manajemen Transportasi yang salah tugasnya menjalankan Air Traffic Control Surveillance (ATCS) sebagai salah satu komponen manajemen transportasi di Kota Bandung.',
+            'sjB-p3' => 'Dalam menjalankan tugas, fungsi dan uraian tugas sebagaimana dimaksud, kepala Bidang Manajemen Transportasi dan Parkir dibantu oleh beberapa seksi yang terdiri dari:',
+            'sjB-no1' => 'Seksi Manajemen Transportasi,',
+            'sjB-no2' => 'Seksi Manajemen Perparkiran, dan',
+            'sjB-no3' => 'Seksi Manajemen Angkutan.',
+            'subJudulC' => 'C.  BIDANG PENGENDALIAN DAN KETERTIBAN TRANSPORTASI',
+            'sjC-p1' => 'Bidang Pengendalian dan Ketertiban Transportasi (PDKT) yang dipimpin oleh seorang Kepala Bidang mempunyai tugas melaksanakan sebagian tugas Kepala Dinas lingkup pengendalian dan ketertiban transportasi.',
+            'sjC-p2' => 'Bidang Pengendalian dan Ketertiban Transportasi adalah bidang yang memiliki fungsi sebagai penyusun rencana dan program kerja pengendalian dan ketertiban transportasi, dimana personil PDKT akan masyarakat sering jumpai di jalanan utama Kota Bandung dalam menjalankan fungsi pengendalian yang berkoordinasi dengan kepolisian untuk mengatur lalu lintas Kota Bandung. Bidang PDKT juga dikenal sebagai penegak peraturan daerah mengenai pelanggaran parkir tepi jalan dengan tindakan cabut pentil dan penempelan stiker peringatan terhadap pelanggar.',
+            'sjC-p3' => 'Dalam menjalankan tugas, fungsi dan uraian tugas sebagaimana dimaksud, Kepala Bidang Pengendalian dan Ketertiban Transportasi dibantu oleh beberapa seksi yang terdiri dari:',
+            'sjC-no1' => 'Seksi Ketertiban Transportasi,',
+            'sjC-no2' => 'Seksi Pengamanan dan Pengawasan, dan',
+            'sjC-no3' => 'Seksi Pengaturan Transportasi.',
+            'subJudulD' => 'D.  BIDANG SARANA DAN PRASARANA TRANSPORTASI',
+            'sjD-p1' => 'Bidang Sarana dan Prasarana Transportasi (SPT) yang dipimpin oleh seorang Kepala Bidang mempunyai tugas  melaksanakan sebagian tugas Kepala Dinas lingkup perlengkapan jalan, sarana angkutan dan prasarana.',
+            'sjD-p2' => 'Bidang Sarana dan Prasarana Transportasi (SPT) adalah bidang yang memiliki fungsi sebagai penyusun rencana dan program kerja lingkup sarana dan prasarana transportasi. Bidang SPT memastikan terpenuhinya kebutuhan sarana dan prasana berkaitan dengan penyelenggaraan urusan perhubungan khususnya terkait perlengkapan jalan, sarana angkutan dan prasarana bagi Dinas Perhubungan Kota Bandung.',
+            'sjD-p3' => 'Dalam menjalankan tugas, fungsi dan uraian tugas, Kepala Bidang sarana dan prasarana transportasi dibantu oleh beberapa seksi yang terdiri dari:',
+            'sjD-no1' => 'Seksi Perlengkapan Jalan,',
+            'sjD-no2' => 'Seksi Sarana Angkutan, dan',
+            'sjD-no3' => 'Seksi Prasarana.'
+        ];
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
         $this->view('kelembagaan/bidang', $data);
@@ -13,7 +43,15 @@ class Kelembagaan extends Controller{
 
     public function sekretariat(){
         $data['judul'] = 'Sekretariat';
-        $data['isi'] = 'Ini Halaman Sekretariat';
+        $data['data'] = [
+            'subJudulA' => 'A.  SEKRETARIAT DINAS',
+            'p1' => 'Sekretariat Dinas Perhubungan dipimpin oleh seorang Sekretaris yang mempunyai tugas melaksanakan sebagian tugas Kepala Dinas lingkup kesekretariatan yang meliputi pengelolaan umum dan kepegawaian, pengelolaan keuangan, pengoordinasian penyusunan program, data dan informasi serta pengoordinasian tugas-tugas bidang.',
+            'p2' => 'Dalam menjalankan menjalankan tugas, fungsi dan uraian tugas sebagaimana dimaksud, Sekretaris Dinas Perhubungan dibantu oleh beberapa sub bagian yang terdiri dari:',
+            'no1' => 'Sub Bagian Umum dan Kepegawaian;',
+            'no2' => 'Sub Bagian Keuangan; dan',
+            'no3' => 'Sub Bagian Program, Data dan Informasi.'
+        ];
+
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
         $this->view('kelembagaan/sekretariat', $data);

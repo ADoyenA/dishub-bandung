@@ -15,7 +15,16 @@
     </section><!-- End Breadcrumbs -->
     <section id="sekretariat" class="sekretariat">
         <div class="container">
-            <h1><?= $data['isi']; ?></h1>
+            <h5><?= $data['data']['subJudulA']; ?></h5>
+            <img src="" alt="Gambar disini">
+            <p><?= $data['data']['p1']; ?></p>
+            <p><?= $data['data']['p2']; ?></p>
+            <div></div>
+            <ol>
+                <li><?= $data['data']['no1']; ?></li>
+                <li><?= $data['data']['no2']; ?></li>
+                <li><?= $data['data']['no3']; ?></li>
+            </ol>
         </div>
     </section>
 </main>
