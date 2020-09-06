@@ -61,7 +61,7 @@
 
             <div class="row content">
                 <div class="col-lg-6">
-                    <h2>Eum ipsam laborum deleniti velitena</h2>
+                    <h1>Dinas Perhubungan Kota Bandung</h1>
                     <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
@@ -125,8 +125,8 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Service</h2>
-                <p>The Services We Offer</p>
+                <h2>Layanan</h2>
+                <p>Layanan yang Kita Berikan</p>
             </div>
 
             <div class="row">
@@ -177,157 +177,267 @@
         </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
         <div class="container">
 
             <div class="section-title">
-                <h2>Portfolio</h2>
-                <p>Recent Works</p>
+                <h2>Informasi</h2>
+                <p>Informasi Terbaru</p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
-                    </ul>
+            <!-- ======= Blog Section ======= -->
+            <section id="blog" class="blog">
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                            <article class="entry">
+
+                                <div class="entry-img">
+                                    <img src="<?= BASEURL; ?>/public/img/blog-1.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <h2 class="entry-title">
+                                    <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                                </h2>
+
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
+                                        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="entry-content">
+                                    <p>
+                                        Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta zena prista maraeda talan mas indera.
+                                    </p>
+                                    <div class="read-more">
+                                        <a href="<?= BASEURL; ?>/blog/blogSingle">Read More</a>
+                                    </div>
+                                </div>
+
+                            </article><!-- End blog entry -->
+                        </div>
+
+                        <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                            <article class="entry">
+
+                                <div class="entry-img">
+                                    <img src="<?= BASEURL; ?>/public/img/blog-5.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <h2 class="entry-title">
+                                    <a href="<?= BASEURL; ?>/blog/blogSingle">Blanditiis dignissimos deleniti. Rerum iste et.</a>
+                                </h2>
+
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/blog/blogSingle">John Doe</a></li>
+                                        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="entry-content">
+                                    <p>
+                                        Quidem et eum explicabo quia illo numquam nostrum corrupti provident. Quia aspernatur et et facere. Quisquam maiores natus nihil incidunt ipsum est optio eum maxime. Dignissimos vitae explicabo. Corrupti esse sed a a. Laborum optio reprehenderit quia dena per.
+                                    </p>
+                                    <div class="read-more">
+                                        <a href="<?= BASEURL; ?>/blog/blogSingle">Read More</a>
+                                    </div>
+                                </div>
+
+                            </article><!-- End blog entry -->
+                        </div>
+
+                        <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                            <article class="entry">
+
+                                <div class="entry-img">
+                                    <img src="<?= BASEURL; ?>/public/img/blog-6.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <h2 class="entry-title">
+                                    <a href="<?= BASEURL; ?>/blog/blogSingle">Debitis cupiditate saepe ex quam aut id. Consequatur dignissimos et id id.</a>
+                                </h2>
+
+                                <div class="entry-meta">
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/blog/blogSingle">John Doe</a></li>
+                                        <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="entry-content">
+                                    <p>
+                                        Modi dolor et placeat ut iure ad. Qui perferendis fugit quo et cumque facilis et debitis rerum. Repellendus animi qui eos. Unde perferendis et tempora Ratione porro omnis magn delata sera marto ned.
+                                    </p>
+                                    <div class="read-more">
+                                        <a href="<?= BASEURL; ?>/blog/blogSingle">Read More</a>
+                                    </div>
+                                </div>
+
+                            </article><!-- End blog entry -->
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
+            </section><!-- End Blog Section -->
 
-            <div class="row portfolio-container">
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 1</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                            </div>
+            <!-- ======= Portfolio Section ======= -->
+            <section id="portfolio" class="portfolio">
+                <div class="container">
+
+                    <div class="section-title">
+                        <h2>Dokumentasi</h2>
+                        <p>Dokumentasi Terbaru</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">All</li>
+                                <li data-filter=".filter-app">App</li>
+                                <li data-filter=".filter-card">Card</li>
+                                <li data-filter=".filter-web">Web</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                    <div class="row portfolio-container">
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 1</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 2</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 2</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 2</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 2</h4>
-                            <p>Web</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 2</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>App 3</h4>
-                            <p>App</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 2</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 1</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>App 3</h4>
+                                    <p>App</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Card 3</h4>
-                            <p>Card</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 1</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                        <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <div class="portfolio-links">
-                                <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Card 3</h4>
+                                    <p>Card</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="portfolio-wrap">
+                                <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-info">
+                                    <h4>Web 3</h4>
+                                    <p>Web</p>
+                                    <div class="portfolio-links">
+                                        <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                        <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
-
-            </div>
-
-        </div>
-    </section><!-- End Portfolio Section -->
+            </section><!-- End Portfolio Section -->
 
 </main><!-- End #main -->
