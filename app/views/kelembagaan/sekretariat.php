@@ -13,9 +13,9 @@
 
     </div>
     </section><!-- End Breadcrumbs -->
-    <section id="sekretariat" class="sekretariat">
+    <section id="blog" class="blog">
         <div class="container">
-            <h5><?= $data['data']['subJudulA']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulA']; ?></h5>
             <img src="" alt="Gambar disini">
             <p><?= $data['data']['p1']; ?></p>
             <p><?= $data['data']['p2']; ?></p>

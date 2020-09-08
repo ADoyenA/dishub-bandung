@@ -13,9 +13,9 @@
 
     </div>
     </section><!-- End Breadcrumbs -->
-    <section id="bidang" class="bidang">
+    <section id="blog" class="blog">
         <div class="container">
-            <h5><?= $data['data']['subJudulA']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulA']; ?></h5>
             <p><?= $data['data']['sjA-p1']; ?></p>
             <p><?= $data['data']['sjA-p2']; ?></p>
             <p><?= $data['data']['sjA-p3']; ?></p>
@@ -37,7 +37,7 @@
                 <li><?= $data['data']['sjB-no3']; ?></li>
             </ol>
             <img src="" alt="Gambar disini">
-            <h5><?= $data['data']['subJudulC']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulC']; ?></h5>
             <p><?= $data['data']['sjC-p1']; ?></p>
             <p><?= $data['data']['sjC-p2']; ?></p>
             <p><?= $data['data']['sjC-p3']; ?></p>
@@ -48,7 +48,7 @@
                 <li><?= $data['data']['sjC-no3']; ?></li>
             </ol>
             <img src="" alt="Gambar disini">
-            <h5><?= $data['data']['subJudulD']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulD']; ?></h5>
             <p><?= $data['data']['sjD-p1']; ?></p>
             <p><?= $data['data']['sjD-p2']; ?></p>
             <p><?= $data['data']['sjD-p3']; ?></p>

@@ -13,22 +13,22 @@
 
     </div>
     </section><!-- End Breadcrumbs -->
-    <section id="unit_pelaksanan_teknis" class="unit_pelaksanan_teknis">
+    <section id="blog" class="blog">
         <div class="container">
             <!-- A -->
-            <h5><?= $data['data']['subJudulA']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulA']; ?></h5>
             <p><?= $data['data']['sjA-p1']; ?></p>
             <img src="" alt="Gambar disini">
             <p><?= $data['data']['sjA-p2']; ?></p>
 
             <!-- B -->
-            <h5><?= $data['data']['subJudulB']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulB']; ?></h5>
             <p><?= $data['data']['sjB-p1']; ?></p>
             <img src="" alt="Gambar disini">
             <p><?= $data['data']['sjB-p2']; ?></p>
 
             <!-- C -->
-            <h5><?= $data['data']['subJudulC']; ?></h5>
+            <h5 class="card-title"><?= $data['data']['subJudulC']; ?></h5>
             <p><?= $data['data']['sjC-p1']; ?></p>
             <img src="" alt="Gambar disini">
             <p><?= $data['data']['sjC-p2']; ?></p>

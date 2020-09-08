@@ -14,4 +14,11 @@ class userModel{
         $this->db->query("SELECT * FROM informasi");
         return $this->db->resultSet();
     }
+
+    public function getinformasiById($id)
+    {
+        $this->db->query('SELECT * FROM informasi WHERE ID_informasi=:id');
+        $this->db->bind('id', $id);
+        return $this->db->single();
+    }
 }

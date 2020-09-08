@@ -42,6 +42,27 @@ h6 {
   z-index: 99999;
 }
 
+.limit-text {
+  width: 35ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.text-detail-informasi{
+  white-space: pre-line;
+ 
+}
+
+.judul-detail-informasi{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  max-width: 670px;
+}
+
 .back-to-top i {
   display: flex;
   align-items: center;

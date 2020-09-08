@@ -16,18 +16,18 @@
     <!-- ======= Informasi Section ======= -->
     <section id="blog" class="blog">
       <div class="container">
-
+        <?php foreach($data['informasi']  as $informasi) : ?>
         <div class="row">
 
           <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <article class="entry">
 
               <div class="entry-img">
-                <img src="<?= BASEURL; ?>/public/img/blog-1.jpg" alt="" class="img-fluid">
+                <img src="<?= BASEURL; ?>/public/img/dishub1.PNG" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="<?= BASEURL; ?>/informasi/informasiSingle">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</a>
+                <a href="<?= BASEURL; ?>/informasi/informasiSingle"><?= $informasi['judul_informasi']?></a>
               </h2>
               <div class="entry-meta">
                 <ul>
@@ -37,16 +37,17 @@
               </div>
 
               <div class="entry-content">
-                <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta zena prista maraeda talan mas indera.
+                <p class="limit-text">
+                  <?= $informasi['text_informasi']?>
                 </p>
                 <div class="read-more">
-                  <a href="<?= BASEURL; ?>/informasi/informasiSingle">Read More</a>
+                  <a href="<?= BASEURL; ?>/informasi/detailInformasi/<?= $informasi['ID_informasi']?>">Read More</a>
                 </div>
               </div>
 
             </article><!-- End blog entry -->
           </div>
+          <?php endforeach; ?>
 
           <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <article class="entry">
