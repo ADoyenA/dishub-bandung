@@ -8,7 +8,7 @@
       <h2><?= $data['judul']; ?></h2>
       <ol>
         <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-        <li><?= $data['judul1']; ?></li>
+        <li><?= $data['judul']; ?></li>
       </ol>
     </div>
 
