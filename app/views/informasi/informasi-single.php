@@ -6,14 +6,14 @@
           <h2>Dolorum optio tempore voluptas dignissimos</h2>
           <ol>
             <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-            <li><a href="<?= BASEURL; ?>/blog">Blog</a></li>
+            <li><a href="<?= BASEURL; ?>/informasi">Informasi</a></li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Blog Section ======= -->
+    <!-- ======= Informasi Section ======= -->
     <section id="blog" class="blog">
       <div class="container">
 

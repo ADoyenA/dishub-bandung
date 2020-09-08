@@ -20,30 +20,30 @@
 <section id="faq" class="faq">
   <div class="container">
     <div class="section-title">
-      <p><?= $data['title']; ?></p>
+      <p><?= $data['data']['title']; ?></p>
     </div>
         <p>
-        <?= $data['p1']; ?>
+        <?= $data['data']['p1']; ?>
         </p> 
        <br>
         <p>
-        <?= $data['p2']; ?>
+        <?= $data['data']['p2']; ?>
         </p>
         <p>
-        <?= $data['p3']; ?>       
+        <?= $data['data']['p3']; ?>       
         </p>
         <p>
-        <?= $data['p4']; ?>        
+        <?= $data['data']['p4']; ?>        
         </p>
         <p>
-        <?= $data['p5']; ?>       
+        <?= $data['data']['p5']; ?>       
         </p>
         <p>
-        <?= $data['p6']; ?>      
+        <?= $data['data']['p6']; ?>      
         </p>
         <br>
         <p align="justify">
-        <?= $data['p7']; ?>
+        <?= $data['data']['p7']; ?>
         </p>
 
 </main><!-- End #main -->

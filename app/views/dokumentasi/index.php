@@ -5,17 +5,17 @@
   <div class="container">
 
     <div class="d-flex justify-content-between align-items-center">
-      <h2>Portolio</h2>
+      <h2><?= $data['judul']; ?></h2>
       <ol>
         <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-        <li>Portolio</li>
+        <li><?= $data['judul']; ?></li>
       </ol>
     </div>
 
   </div>
 </section><!-- End Breadcrumbs -->
 
-<!-- ======= Portfolio Section ======= -->
+<!-- ======= Dokumentasi Section ======= -->
 <section id="portfolio" class="portfolio">
   <div class="container">
 
@@ -40,7 +40,7 @@
             <p>App</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@
             <p>Web</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
             <p>App</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
             <p>Card</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
             <p>Web</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
             <p>App</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
             <p>Card</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
             <p>Card</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@
             <p>Web</p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/portofolio/portofolioDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>

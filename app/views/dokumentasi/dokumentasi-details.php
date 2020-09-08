@@ -1,13 +1,13 @@
 <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
+    <!-- ======= Dokumentasi Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="portfolio-title">This is an example of portfolio detail</h2>
+            <h2 class="dokumentasi-title">This is an example of Dokumentasi detail</h2>
             <div class="owl-carousel portfolio-details-carousel">
               <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-1.jpg" class="img-fluid" alt="">
               <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">

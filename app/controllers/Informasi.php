@@ -1,20 +1,20 @@
 <?php
 
-Class Blog extends controller{
+Class Informasi extends controller{
     public function index(){
-        $data['judul'] = 'Dishub Bandung';
+        $data['judul'] = 'Informasi';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
-        $this->view('blog/index', $data);
+        $this->view('informasi/index', $data);
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }
 
-    public function blogSingle(){
-        $data['judul'] = 'Dishub Bandung';
+    public function informasiSingle(){
+        $data['judul'] = 'Detail Informasi';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
-        $this->view('blog/blog-single', $data);
+        $this->view('informasi/informasi-single', $data);
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }

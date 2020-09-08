@@ -23,11 +23,11 @@
 
       <div class="col-lg-3 col-md-6">
         <div class="box featured">
-          <h3><?= $data['rs']; ?></h3>
+          <h3><?= $data['data']['rs']; ?></h3>
           <ul>
-            <li><?= $data['rs1']; ?> </li>
-            <li><?= $data['rs2']; ?> </li>
-            <li><?= $data['rs3']; ?></li>
+            <li><?= $data['data']['rs1']; ?> </li>
+            <li><?= $data['data']['rs2']; ?> </li>
+            <li><?= $data['data']['rs3']; ?></li>
           </ul>
           <div class="btn-wrap">
             <a href="#" class="btn-buy">Download</a>
@@ -37,11 +37,11 @@
 
       <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
         <div class="box featured">
-          <h3><?= $data['rk']; ?></h3>
+          <h3><?= $data['data']['rk']; ?></h3>
           <ul>
-            <li><?= $data['rk1']; ?></li>
-            <li><?= $data['rk2']; ?> </li>
-            <li><?= $data['rk3']; ?></li>
+            <li><?= $data['data']['rk1']; ?></li>
+            <li><?= $data['data']['rk2']; ?> </li>
+            <li><?= $data['data']['rk3']; ?></li>
           </ul>
           <div class="btn-wrap">
             <a href="#" class="btn-buy">Download</a>

@@ -13,7 +13,7 @@
                 <ul>
                     <li class="active"><a href="<?= BASEURL; ?>/home">Home</a></li>
 
-                    <li class="drop-down"><a href="#">Profil</a>
+                    <li class="drop-down"><a href="">Profil</a>
                         <ul>
                             <li><a href="<?= BASEURL; ?>/profil/sejarah">Sejarah/Selayang Pandang</a></li>
                             <li><a href="<?= BASEURL; ?>/profil/struktur">Struktur Organisasi</a></li>
@@ -31,9 +31,16 @@
                             <li><a href="<?= BASEURL; ?>/kelembagaan/unit_pelaksana_teknis">Unit Pelaksana Teknis</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?= BASEURL; ?>/portofolio">Portfolio</a></li>
-                    <li><a href="<?= BASEURL; ?>/pricing">Pricing</a></li>
-                    <li><a href="<?= BASEURL; ?>/blog">Blog</a></li>
+                    <li><a href="<?= BASEURL; ?>/dokumentasi">Dokumentasi</a></li>
+                    <li><a href="<?= BASEURL; ?>/informasi">Informasi</a></li>
+                    <li class="drop-down"><a href="">Layanan</a>
+                        <ul>
+                            <li><a href="#">Pengujian Kendaraan</a></li>
+                            <li><a href="#">Rekomendasi Penyelenggaraan Parkir</a></li>
+                            <li><a href="#">Angkutan</a></li>
+                            <li><a href="#">Parkir On-Street</a></li>
+                        </ul>
+                    </li>
                     <li><a href="<?= BASEURL; ?>/kontak">Kontak</a></li>
 
                 </ul>
