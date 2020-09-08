@@ -21,4 +21,18 @@ class userModel{
         $this->db->bind('id', $id);
         return $this->db->single();
     }
+
+    public function getAllDataDokumentasi()
+    {
+        $this->db->query("SELECT * FROM dokumentasi");
+        return $this->db->resultSet();
+    }
+
+    public function getDokumentasiById($id)
+    {
+        $this->db->query('SELECT * FROM dokumentasi WHERE ID_dokumentasi=:id');
+        $this->db->bind('id', $id);
+        return $this->db->single();
+    }
+
 }

@@ -29,23 +29,23 @@
         </ul>
       </div>
     </div>
-
+    <?php foreach($data['dokumentasi']  as $dokumentasi) : ?>
     <div class="row portfolio-container">
 
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <div class="portfolio-wrap">
           <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
           <div class="portfolio-info">
-            <h4>App 1</h4>
-            <p>App</p>
+            <h4><?= $dokumentasi['judul-dokumentasi']?></h4>
+            <p><?= $dokumentasi['waktu-upload']?></p>
             <div class="portfolio-links">
               <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails/<?= $dokumentasi['ID_dokumentasi']?>" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
         </div>
       </div>
-
+      <?php endforeach; ?>
       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <div class="portfolio-wrap">
           <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">

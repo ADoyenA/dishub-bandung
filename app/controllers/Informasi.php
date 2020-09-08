@@ -30,5 +30,7 @@ Class Informasi extends controller{
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }
+
+
 }
 
