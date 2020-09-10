@@ -9,7 +9,7 @@
           <div class="col-lg-8">
             <h2 class="dokumentasi-title"><?= $data['dokumentasi']['judul-dokumentasi'] ?></h2>
             <div class="owl-carousel portfolio-details-carousel">
-              <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-1.jpg" class="img-fluid" alt="">
+              <img src="<?= BASEURL; ?>/public/img/tilang.jpg" class="img-fluid" alt="">
               <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
               <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="">
             </div>

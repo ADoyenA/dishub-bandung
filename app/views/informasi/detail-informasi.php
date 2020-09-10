@@ -33,8 +33,8 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $data['informasi']['username']?></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01"><?= $data['informasi']['waktu-upload']?></time></a></li>
                   <!-- <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Comments</a></li> -->
                 </ul>
               </div>
@@ -67,27 +67,16 @@
           </div><!-- End blog entries list -->
 
           <div class="col-lg-4">
-
             <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
               <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="icofont-search"></i></button>
-                </form>
-
               </div><!-- End sidebar search formn-->
 
               <h3 class="sidebar-title">Categories</h3>
               <div class="sidebar-item categories">
                 <ul>
-                  <li><a href="#">General <span>(25)</span></a></li>
-                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href="#">Travel <span>(5)</span></a></li>
-                  <li><a href="#">Design <span>(22)</span></a></li>
-                  <li><a href="#">Creative <span>(8)</span></a></li>
-                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                  <li><a href="#">Informasi Berkala<span>(25)</span></a></li>
+                  <li><a href="#">Informasi Setiap Saat<span>(12)</span></a></li>
+                  <li><a href="#">Informasi Sertamerta <span>(5)</span></a></li>
                 </ul>
 
               </div><!-- End sidebar categories-->

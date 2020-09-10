@@ -31,8 +31,8 @@
               </h2>
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle"><?= $informasi['username']?></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01"><?= $informasi['waktu-upload']?></time></a></li>
                 </ul>
               </div>
 

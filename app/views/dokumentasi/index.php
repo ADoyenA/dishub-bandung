@@ -34,12 +34,12 @@
 
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <div class="portfolio-wrap">
-          <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+          <img src="<?= BASEURL; ?>/public/img/tilang.jpg" class="img-fluid" alt="">
           <div class="portfolio-info">
             <h4><?= $dokumentasi['judul-dokumentasi']?></h4>
             <p><?= $dokumentasi['waktu-upload']?></p>
             <div class="portfolio-links">
-              <a href="<?= BASEURL; ?>/public/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="<?= BASEURL; ?>/public/img/tilang.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="<?= BASEURL; ?>/dokumentasi/dokumentasiDetails/<?= $dokumentasi['ID_dokumentasi']?>" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
