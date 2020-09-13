@@ -7,7 +7,7 @@
         <div class="row">
 
           <div class="col-lg-8">
-            <h2 class="dokumentasi-title"><?= $data['dokumentasi']['judul-dokumentasi'] ?></h2>
+            <h2 class="dokumentasi-title"><?= $data['dokumentasi']['judul_dokumentasi'] ?></h2>
             <div class="owl-carousel portfolio-details-carousel">
               <img src="<?= BASEURL; ?>/public/img/tilang.jpg" class="img-fluid" alt="">
               <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
@@ -20,7 +20,7 @@
             <ul>
               <li><strong>Category</strong>: Web design</li>
               <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: <?= $data['dokumentasi']['waktu-upload'] ?></li>
+              <li><strong>Project date</strong>: <?= $data['dokumentasi']['waktu_upload'] ?></li>
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
             </ul>
 

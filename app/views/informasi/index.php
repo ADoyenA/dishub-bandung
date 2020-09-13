@@ -31,7 +31,7 @@
               <div class="entry-meta">
                 <ul>
                   <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle"><?= $informasi['username']?></a></li>
-                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><time datetime="2020-01-01"><?= $informasi['waktu-upload']?></time></a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><?= $informasi['waktu_upload']?></a></li>
                 </ul>
               </div>
 
