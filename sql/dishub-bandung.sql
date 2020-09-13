@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 08 Sep 2020 pada 15.04
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.4.4
+-- Waktu pembuatan: 10 Sep 2020 pada 14.29
+-- Versi server: 10.4.13-MariaDB
+-- Versi PHP: 7.4.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -77,6 +77,13 @@ CREATE TABLE `dokumentasi` (
   `ID_admin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `dokumentasi`
+--
+
+INSERT INTO `dokumentasi` (`ID_dokumentasi`, `judul-dokumentasi`, `img-cover`, `text_dokumentasi`, `waktu-upload`, `ID_admin`) VALUES
+(2, 'Operasi Penertiban Parkir Liar', 'tilang', 'Bandung kerap dilanda kemacetan. Parkir liar dituding menjadi salah satu dalang utama kemacetan kota kembang. Sementara aktivitas lalu lintas dengan kain meningkatkan volume kendaraan di Kota Bandung memang semakin padat. Tak pelak, kemacetan pun banyak terjadi beberapa titik pusat perbelanjaan maupun jalan protokol di Kota Bandung. Penegakan Perda terkait pelanggaran parkir liar dilakukan Dishub bersama Polrestabes Kota Bandung untuk dapat menciptakan kondisi kondusif di ruas jalan Kota Bandung.', '2020-09-08 21:49:05', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -101,6 +108,7 @@ CREATE TABLE `informasi` (
   `judul_informasi` varchar(60) NOT NULL,
   `kategori` varchar(30) NOT NULL,
   `text_informasi` text NOT NULL,
+  `waktu-upload` datetime NOT NULL,
   `ID_admin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -108,8 +116,8 @@ CREATE TABLE `informasi` (
 -- Dumping data untuk tabel `informasi`
 --
 
-INSERT INTO `informasi` (`ID_informasi`, `img`, `judul_informasi`, `kategori`, `text_informasi`, `ID_admin`) VALUES
-(2, 'dishub1', 'Kota Bandung Akan Aktifkan Check Point Lagi', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', 1);
+INSERT INTO `informasi` (`ID_informasi`, `img`, `judul_informasi`, `kategori`, `text_informasi`, `waktu-upload`, `ID_admin`) VALUES
+(3, 'dishub1', 'Kota Bandung Akan Aktifkan Check Point Lagi', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-10 18:41:21', 1);
 
 --
 -- Indexes for dumped tables
@@ -169,7 +177,7 @@ ALTER TABLE `detail-admin`
 -- AUTO_INCREMENT untuk tabel `dokumentasi`
 --
 ALTER TABLE `dokumentasi`
-  MODIFY `ID_dokumentasi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_dokumentasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `foto-kegiantan`
@@ -181,7 +189,7 @@ ALTER TABLE `foto-kegiantan`
 -- AUTO_INCREMENT untuk tabel `informasi`
 --
 ALTER TABLE `informasi`
-  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
