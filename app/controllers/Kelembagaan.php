@@ -1,8 +1,10 @@
 <?php
 
-class Kelembagaan extends Controller{
+class Kelembagaan extends Controller
+{
 
-    public function bidang(){
+    public function bidang()
+    {
         $data['judul'] = 'Bidang-Bidang';
         $data['data'] = [
             'subJudulA' => 'A.  BIDANG PERENCANAAN DAN PEMBINAAN TRANSPORTASI',
@@ -41,14 +43,15 @@ class Kelembagaan extends Controller{
         $this->view('templates/afterFooter', $data);
     }
 
-    public function sekretariat(){
+    public function sekretariat()
+    {
         $data['judul'] = 'Sekretariat';
         $data['data'] = [
             'subJudulA' => 'A.  SEKRETARIAT DINAS',
             'p1' => 'Sekretariat Dinas Perhubungan dipimpin oleh seorang Sekretaris yang mempunyai tugas melaksanakan sebagian tugas Kepala Dinas lingkup kesekretariatan yang meliputi pengelolaan umum dan kepegawaian, pengelolaan keuangan, pengoordinasian penyusunan program, data dan informasi serta pengoordinasian tugas-tugas bidang.',
             'p2' => 'Dalam menjalankan menjalankan tugas, fungsi dan uraian tugas sebagaimana dimaksud, Sekretaris Dinas Perhubungan dibantu oleh beberapa sub bagian yang terdiri dari:',
-            'no1' => 'Sub Bagian Umum dan Kepegawaian;',
-            'no2' => 'Sub Bagian Keuangan; dan',
+            'no1' => 'Sub Bagian Umum dan Kepegawaian, ',
+            'no2' => 'Sub Bagian Keuangan, dan',
             'no3' => 'Sub Bagian Program, Data dan Informasi.'
         ];
 
@@ -59,7 +62,8 @@ class Kelembagaan extends Controller{
         $this->view('templates/afterFooter', $data);
     }
 
-    public function unit_pelaksana_teknis(){
+    public function unit_pelaksana_teknis()
+    {
         $data['judul'] = 'Unit Pelaksana Teknis';
         $data['data'] = [
             'subJudulA' => 'A.  UNIT PELAKSANA TEKNIS ANGKUTAN',
@@ -78,6 +82,4 @@ class Kelembagaan extends Controller{
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }
-
-    
 }
