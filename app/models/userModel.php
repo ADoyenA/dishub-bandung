@@ -11,13 +11,11 @@ class userModel{
 
     public function getAllDataInformasi()
     {
-
-            $this->db->query("SELECT * FROM informasi");
+            $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
             return $this->db->resultSet();
-        }
+    }
 
-        // $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
-        // return $this->db->resultSet();
+        
     
 
 
