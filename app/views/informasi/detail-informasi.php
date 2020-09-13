@@ -69,14 +69,8 @@
           <div class="col-lg-4">
 
             <div class="sidebar">
-
-              <h3 class="sidebar-title">Search</h3>
               <div class="sidebar-item search-form">
-                <form action="">
-                  <input type="text">
-                  <button type="submit"><i class="icofont-search"></i></button>
-                </form>
-
+                
               </div><!-- End sidebar search formn-->
 
               <h3 class="sidebar-title">Categories</h3>
