@@ -2,11 +2,11 @@
 
 class Admin extends Controller {
 
-    public function login()
+    public function index()
     {
         $data['judul'] = 'Login Admin';
         $this->view('templates/beforeHeader', $data);
-        $this->view('admin/login', $data);
+        $this->view('admin/index', $data);
         $this->view('templates/afterFooter', $data);
     }
 
