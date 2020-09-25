@@ -13,7 +13,7 @@
                 <ul>
                     <li class="active"><a href="<?= BASEURL; ?>/home">Home</a></li>
 
-                    <li class="drop-down"><a href="">Profil</a>
+                    <li class="drop-down"><a href="#">Profil</a>
                         <ul>
                             <li><a href="<?= BASEURL; ?>/profil/sejarah">Sejarah/Selayang Pandang</a></li>
                             <li><a href="<?= BASEURL; ?>/profil/struktur">Struktur Organisasi</a></li>
@@ -24,7 +24,7 @@
                         </ul>
                     </li>
 
-                    <li class="drop-down"><a href="">Kelembagaan</a>
+                    <li class="drop-down"><a href="#">Kelembagaan</a>
                         <ul>
                             <li><a href="<?= BASEURL; ?>/kelembagaan/sekretariat">Sekretariat</a></li>
                             <li><a href="<?= BASEURL; ?>/kelembagaan/bidang">Bidang-Bidang</a></li>
