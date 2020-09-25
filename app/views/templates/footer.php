@@ -8,8 +8,8 @@
                      <div class="footer-info">
                          <h3>Sailor</h3>
                          <p>
-                         Soekarno-Hatta St No.205, Situsaeur<br>
-                         Bojongloa Kidul, Bandung City, West Java<br><br>
+                         Jl. Sor GBLA, Rancabolang,<br>
+                         Kec. Gedebage, Bandung City, West Java 40292<br><br>
                              <strong>Phone:</strong>(022) 5220769<br>
                              <strong>Email:</strong>dishubkotabandung@gmail.com<br>
                          </p>
