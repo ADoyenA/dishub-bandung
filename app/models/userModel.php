@@ -2,41 +2,60 @@
 
 class userModel{
     private $db;
+    private $API;
 
     public function __construct()
     {
         $this->db = new Database;
+        $this->API = new CallAPI;
     }
 
 
     public function getAllDataInformasi()
     {
-            $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
-            return $this->db->resultSet();
+        $getInformasi = $this->API->CallAPI('GET', "informasi","read", "");
+        $informasi = json_encode($getInformasi);
+        $result = json_decode($informasi, true);
+
+        return $result['body'];
+            // $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
+            // return $this->db->resultSet();
     }
-
-        
-    
-
 
     public function getInformasiById($id)
     {
-        $this->db->query('SELECT * FROM informasi, admin WHERE ID_informasi=:id and informasi.ID_admin = admin.ID_admin');
-        $this->db->bind('id', $id);
-        return $this->db->single();
+        $getInformasiById = $this->API->CallAPI('GET', "informasi","single_read?ID_informasi=". $id, "");
+        $informasi = json_encode($getInformasiById);
+        $result = json_decode($informasi, true);
+
+        return $result;
+        // $this->db->query('SELECT * FROM informasi, admin WHERE ID_informasi=:id and informasi.ID_admin = admin.ID_admin');
+        // $this->db->bind('id', $id);
+        // return $this->db->single();
     }
 
     public function getAllDataDokumentasi()
     {
-        $this->db->query("SELECT * FROM dokumentasi");
-        return $this->db->resultSet();
+        $getDokumentasi = $this->API->CallAPI('GET', "dokumentasi", "read", "");
+        $dokumentasi = json_encode($getDokumentasi);
+        $result = json_decode($dokumentasi, true);
+
+        return $result['body'];
+        // $this->db->query("SELECT * FROM dokumentasi");
+        // return $this->db->resultSet();
     }
 
     public function getDokumentasiById($id)
     {
-        $this->db->query('SELECT * FROM dokumentasi WHERE ID_dokumentasi=:id');
-        $this->db->bind('id', $id);
-        return $this->db->single();
+        $getDokumentasiById = $this->API->CallAPI('GET', "dokumentasi", "single_read?ID_dokumentasi=" . $id, "");
+        $dokumentasi = json_encode($getDokumentasiById);
+        $result = json_decode($dokumentasi, true);
+
+        return $result;
+
+        // $this->db->query('SELECT * FROM dokumentasi WHERE ID_dokumentasi=:id');
+        // $this->db->bind('id', $id);
+        // return $this->db->single();
     }
 
 }

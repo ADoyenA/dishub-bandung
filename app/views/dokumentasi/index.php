@@ -29,7 +29,7 @@
         </ul>
       </div>
     </div>
-    <?php foreach($data['dokumentasi']  as $dokumentasi) : ?>
+    <?php foreach ($data['dokumentasi'] as $dokumentasi) : ?>
     <div class="row portfolio-container">
 
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
