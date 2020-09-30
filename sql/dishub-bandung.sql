@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Sep 2020 pada 08.08
+-- Waktu pembuatan: 30 Sep 2020 pada 12.35
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -189,7 +189,7 @@ ALTER TABLE `foto_kegiatan`
 -- AUTO_INCREMENT untuk tabel `informasi`
 --
 ALTER TABLE `informasi`
-  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
