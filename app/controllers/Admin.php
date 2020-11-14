@@ -16,7 +16,7 @@ class Admin extends Controller {
         {
             $data['username'] = $_POST["username"];
             //$data['admin'] = $this->model('adminModel')->getAdminByUsername($username);
-            header('location: ' . BASEURL . '/admin/dasboard'); 
+            header('location: ' . BASEURL . '/admin/dashboard'); 
            
         }else {
             
@@ -26,11 +26,23 @@ class Admin extends Controller {
         }
     }
 
-    public function dasboard()
+    public function dashboard()
     {
-        $data['judul'] = 'Dasboard Admin';
+        $data['judul'] = 'Dashboard Admin';
         $this->view('templates/beforeHeader', $data);
-        $this->view('admin/dasboard', $data);
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/dashboard', $data);
+        $this->view('templates/footerAdmin', $data);
+        $this->view('templates/afterFooter', $data);
+    }
+
+    public function informasi()
+    {
+        $data['judul'] = 'Informasi Admin';
+        $this->view('templates/beforeHeader', $data);
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/informasi', $data);
+        $this->view('templates/footerAdmin', $data);
         $this->view('templates/afterFooter', $data);
     }
 
@@ -41,5 +53,28 @@ class Admin extends Controller {
         $this->view('admin/tambah-informasi', $data);
         $this->view('templates/afterFooter', $data);
     }
+
+    public function dokumentasi()
+    {
+        $data['judul'] = 'Dokumentasi Admin';
+        $this->view('templates/beforeHeader', $data);
+        $this->view('templates/headerAdmin', $data);
+        $this->view('admin/dokumentasi', $data);
+        $this->view('templates/footerAdmin', $data);
+        $this->view('templates/afterFooter', $data);
+    }
+
+   
+
+    public function logout()
+    {
+        // remove all session variables
+        session_unset();
+
+        // destroy the session
+        session_destroy();
+        header('location: ' . BASEURL . '/admin');
+    }
+
 
 }
