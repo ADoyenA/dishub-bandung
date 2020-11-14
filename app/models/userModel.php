@@ -15,16 +15,22 @@ class userModel{
     {
         $getInformasi = $this->API->CallAPI('GET', "informasi","read", "");
         $informasi = json_encode($getInformasi);
-        $result = json_decode($informasi, true);
+        $json = json_decode($informasi, true);
 
-        return $result['body'];
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+        ];
+
+        return $result;
+        //return $result['body'];
             // $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
             // return $this->db->resultSet();
     }
 
     public function getInformasiById($id)
     {
-        $getInformasiById = $this->API->CallAPI('GET', "informasi","single_read?ID_informasi=". $id, "");
+        $getInformasiById = $this->API->CallAPI('GET', "informasi", "single_read?ID_informasi=". $id, "");
         $informasi = json_encode($getInformasiById);
         $result = json_decode($informasi, true);
 
