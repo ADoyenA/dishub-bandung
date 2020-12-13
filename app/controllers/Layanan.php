@@ -7,7 +7,7 @@ class Layanan extends controller
         $data['judul'] = 'Dishub Bandung';
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
-        $this->view('about/index', $data);
+        $this->view('layanan/index', $data);
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }
