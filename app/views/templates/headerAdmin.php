@@ -10,7 +10,7 @@
                     <a class="nav-link" href="<?= BASEURL; ?>/admin/dashboard">Dashboard</a>
                     <a class=" nav-link" href="<?= BASEURL; ?>/admin/informasi">Informasi</a>
                     <a class="nav-link" href="<?= BASEURL; ?>/admin/dokumentasi">Dokumentasi</a>
-                    <a class="nav-link " href="<?= BASEURL; ?>/admin/logout">>Logout</a>
+                    <a class="nav-link " href="<?= BASEURL; ?>/admin/logout">Logout</a>
                 </div>
             </div>
         </nav>
