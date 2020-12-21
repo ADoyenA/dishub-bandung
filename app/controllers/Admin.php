@@ -17,7 +17,7 @@ class Admin extends Controller {
             $username = $_POST["username"];
             $data['admin'] = $this->model('adminModel')->getAdminByUsername($username);
             $_SESSION['ID_admin'] = $data['admin']['ID_admin'];
-            header('location: ' . BASEURL . '/admin/dasboard');
+            header('location: ' . BASEURL . '/admin/dashboard');
         }else {
             
             Pesan::setPesan('danger', 'Email dan Password Anda Salah');
