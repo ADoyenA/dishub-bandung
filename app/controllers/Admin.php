@@ -12,12 +12,12 @@ class Admin extends Controller {
 
     public function masuk()
     {
-        if ($this->model('adminModel')->masukAdmin($_POST) > 0) 
-        {
-            $data['username'] = $_POST["username"];
-            //$data['admin'] = $this->model('adminModel')->getAdminByUsername($username);
-            header('location: ' . BASEURL . '/admin/dashboard'); 
-           
+        if ($this->model('adminModel')->masukAdmin($_POST) > 0)
+        { 
+            $username = $_POST["username"];
+            $data['admin'] = $this->model('adminModel')->getAdminByUsername($username);
+            $_SESSION['ID_admin'] = $data['admin']['ID_admin'];
+            header('location: ' . BASEURL . '/admin/dasboard');
         }else {
             
             Pesan::setPesan('danger', 'Email dan Password Anda Salah');
@@ -53,6 +53,17 @@ class Admin extends Controller {
         $this->view('admin/tambah-informasi', $data);
         $this->view('templates/afterFooter', $data);
     }
+    
+    public function createInformasi()
+    {
+        if ($this->model('adminModel')->createInformasi($_POST) != ""){
+            echo "Berhasil Menambahkan Data";
+           // header('location: ' . BASEURL . '/admin/dasboard'); 
+        }else {
+            echo "Gagal Memasukan Data";
+        }
+    }
+
 
     public function dokumentasi()
     {
