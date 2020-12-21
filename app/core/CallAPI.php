@@ -1,16 +1,16 @@
 <?php
 
-class CallAPI{
+class CallAPI
+{
 
     //private $url;
     public function __construct()
     {
-        
     }
 
     public function CallAPI($method, $api, $actions, $data)
     {
-        $url = "http://localhost/rest-api-dishub-bandung/api/" . $api. "/". $actions;
+        $url = "http://localhost/rest-api-dishub-bandung/api/" . $api . "/" . $actions;
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
@@ -38,8 +38,8 @@ class CallAPI{
         $response = curl_exec($curl);
         $data = json_decode($response);
 
-        /*curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-        // Check for 404 (file not found). //
+        curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+        /* Check for 404 (file not found). */
         $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         // Check the HTTP Status code
         switch ($httpCode) {
@@ -63,10 +63,8 @@ class CallAPI{
                 $error_status = "Undocumented error: " . $httpCode . " : " . curl_error($curl);
                 break;
         }
-        */
         curl_close($curl);
-       // echo $error_status;
-       // die;
-        return $response;
+        echo $error_status;
+        die;
     }
 }
