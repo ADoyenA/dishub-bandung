@@ -10,10 +10,23 @@ class userModel{
         $this->API = new CallAPI;
     }
 
-
     public function getAllDataInformasi()
     {
-        $getInformasi = $this->API->CallAPI('GET', "informasi","read", "");
+        $getInformasi = $this->API->CallAPI('GET', "informasi", "read", "");
+        $informasi = json_encode($getInformasi);
+        $json = json_decode($informasi, true);
+
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+        ];
+
+        return $result;
+    }
+
+    public function getLimitAllDataInformasi($page, $row)
+    {
+        $getInformasi = $this->API->CallAPI('GET', "informasi", "limit?page=" . $page . "&row_per_page=" . $row, "");
         $informasi = json_encode($getInformasi);
         $json = json_decode($informasi, true);
 
@@ -24,8 +37,8 @@ class userModel{
 
         return $result;
         //return $result['body'];
-            // $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
-            // return $this->db->resultSet();
+        // $this->db->query("SELECT * FROM informasi, admin WHERE informasi.ID_admin = admin.ID_admin");
+        // return $this->db->resultSet();
     }
 
     public function getInformasiById($id)

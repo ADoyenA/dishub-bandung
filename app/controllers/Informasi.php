@@ -1,12 +1,24 @@
 <?php
 
 Class Informasi extends controller{
-    public function index(){
+
+    public function index($page){
         $data['judul'] = 'Informasi';
-        $data['informasi'] = $this->model('userModel')->getAllDataInformasi();
+        $data['row'] = 3;
+        $data['start'] = $page;
+        //$data['page'] = 1;
+        
+        // $start = 1;
+        
+        // var_dump($data['start']);
+
+        $data['informasi'] = $this->model('userModel')->getLimitAllDataInformasi($data['start'], $data['row']);
+        $data['rowsInformasi'] = $this->model('userModel')->getAllDataInformasi();
+        $total = $data['rowsInformasi']['itemCount'];
+        $data['pages'] = ceil($total / $data['row']);
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/header', $data);
-        $this->view('informasi/index', $data);
+        $this->view('informasi/index', $data,);
         $this->view('templates/footer', $data);
         $this->view('templates/afterFooter', $data);
     }

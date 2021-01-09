@@ -6,7 +6,7 @@
           <h2 class="judul-detail-informasi"><?= $data['informasi']['judul_informasi'] ?></h2>
           <ol>
             <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-            <li><a href="<?= BASEURL; ?>/informasi">Informasi</a></li>
+            <li><a href="<?= BASEURL; ?>/informasi/1">Informasi</a></li>
           </ol>
         </div>
 
@@ -48,7 +48,7 @@
                     <div class="float-left">
                     <i class="icofont-folder"></i>
                     <ul class="cats">
-                        <li><a href="<?= BASEURL; ?>/informasi">Informasi</a></li>
+                        <li><a href="<?= BASEURL; ?>/informasi/1">Informasi</a></li>
                     </ul>
 
                     <i class="icofont-tags"></i>

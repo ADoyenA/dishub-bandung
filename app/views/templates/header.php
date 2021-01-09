@@ -32,7 +32,7 @@
                         </ul>
                     </li>
                     <li><a href="<?= BASEURL; ?>/dokumentasi">Dokumentasi</a></li>
-                    <li><a href="<?= BASEURL; ?>/informasi">Informasi</a></li>
+                    <li><a href="<?= BASEURL; ?>/informasi/1">Informasi</a></li>
                     <li class="drop-down"><a href="">Layanan</a>
                         <ul>
                             <li><a href="#">Pengujian Kendaraan</a></li>
@@ -47,7 +47,7 @@
 
             </nav><!-- .nav-menu -->
 
-            <a href="<?= BASEURL; ?>/home" class="get-started-btn ml-auto">Get Started</a>
+            <a href="<?= BASEURL; ?>/home" class="get-started-btn ml-auto">Tour</a>
 
         </div>
     </header><!-- End Header -->
