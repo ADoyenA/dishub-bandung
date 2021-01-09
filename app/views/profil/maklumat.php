@@ -5,98 +5,166 @@
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2><?= $data['judul']; ?></h2>
+        <h2>Layanan</h2>
         <ol>
           <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-          <li><?= $data['judul']; ?></li>
+          <li>Pengujian Kendaraan</li>
         </ol>
       </div>
 
     </div>
   </section><!-- End Breadcrumbs -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container" data-aos="fade-up">
+  <!-- ======= About Section ======= -->
+  <section id="features" class="features">
+    <div class="container">
 
       <div class="section-title">
-        <h2>Tentang Kami</h2>
-        <p>DINAS PERHUBUNGAN PEMERINTAH KOTA BANDUNG</p>
+        <h2>Layanan</h2>
+        <p>Pengujian Kendaraan</p>
       </div>
-      <p>
-        <?= $data['data']['p1']; ?>
-      </p>
 
       <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Sejarah</h3>
-          <div class="resume-item pb-0">
-            <h4>Sekilas Tentang Dinas Perhubungan Kota Bandung</h4>
-            <h5>1997 - Sekarang</h5>
-            <p align="justify">
-              <?= $data['data']['p2']; ?>
-            </p>
-            <p>
-              <?= $data['data']['p3']; ?>
-            </p>
-            <ol align="justify">
-              <li><?= $data['data']['s1']; ?></li>
-              <br>
-              <li><?= $data['data']['s2']; ?></li>
-              <br>
-              <li><?= $data['data']['s3']; ?></li>
-            </ol>
-            </p>
-          </div>
-
-          <h3 class="resume-title">Visi dan Misi</h3>
-          <div class="resume-item">
-            <h4>Visi</h4>
-            <p align="justify">
-              <?= $data['data']['v1']; ?>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>Misi</h4>
-            <ul align="justify">
-              <li><?= $data['data']['m1']; ?></li>
-              <li><?= $data['data']['m2']; ?></li>
-              <li><?= $data['data']['m3']; ?></li>
-              <li><?= $data['data']['m4']; ?></li>
-            </ul>
-          </div>
+        <div class="col-lg-3">
+          <ul class="nav nav-tabs flex-column">
+            <li class="nav-item">
+              <a class="nav-link active show" data-toggle="tab" href="#tab-1">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-2">Persyaratan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-3">Sistem, Mekanisme dan Prosedur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-4">Waktu Penyelesaian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-5">Biaya / Tarif</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab-6">Jam Operasional Pelayanan</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Dasar Hukum</h3>
-          <div class="resume-item">
-            <h4>Dasar Hukum Dinas Perhubungan Kota Bandung</h4>
-            <ol align="justify">
-              <li><?= $data['data']['d1']; ?></li>
-              <br>
-              <li><?= $data['data']['d2']; ?></li>
-              <br>
-              <li><?= $data['data']['d3']; ?></li>
-              <br>
-              <li><?= $data['data']['d4']; ?></li>
-              <br>
-              <li><?= $data['data']['d5']; ?></li>
-              <br>
-              <li><?= $data['data']['d6']; ?></li>
-              <br>
-              <li><?= $data['data']['d7']; ?></li>
-              <br>
-              <li><?= $data['data']['d8']; ?></li>
-              <br>
-              <li><?= $data['data']['d9']; ?></li>
-              <br>
-              <li><?= $data['data']['d10']; ?></li>
-            </ol>
-            </p>
+        <div class="col-lg-9 mt-4 mt-lg-0">
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Pengujian Kendaraan</h3>
+                  <p align="justify">
+                    <?= $data['data']['t1']; ?>
+                  </p>
+                  <p align="justify">
+                    <?= $data['data']['t2']; ?>
+                  </p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-1.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Persyaratan</h3>
+                  <ul align="justify">
+                    <li><?= $data['data']['p1']; ?></li>
+                    <li><?= $data['data']['p2']; ?></li>
+                    <li><?= $data['data']['p3']; ?></li>
+                    <li><?= $data['data']['p4']; ?></li>
+                    <li><?= $data['data']['p5']; ?></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-2.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Sistem, Mekanisme dan Prosedur</h3>
+                  <ul align="justify">
+                    <li><?= $data['data']['s1']; ?></li>
+                    <li><?= $data['data']['s2']; ?></li>
+                    <li><?= $data['data']['s3']; ?></li>
+                    <li><?= $data['data']['s4']; ?></li>
+                    <li><?= $data['data']['s5']; ?></li>
+                    <li><?= $data['data']['s6']; ?></li>
+                    <li><?= $data['data']['s7']; ?></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-3.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Waktu Penyelesaian</h3>
+                  <p align="justify">
+                    <?= $data['data']['w1']; ?>
+                  </p>
+                  <p align="justify">
+                    <?= $data['data']['w2']; ?>
+                  </p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-4.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-5">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Biaya / Tarif</h3>
+                  <ol align="justify">
+                    <li><?= $data['data']['b1']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b2']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b3']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b4']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b5']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b6']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b7']; ?></li>
+                    <br>
+                    <li><?= $data['data']['b8']; ?></li>
+                  </ol>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-5.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-6">
+              <div class="row">
+                <div class="col-lg-8 details order-2 order-lg-1">
+                  <h3>Jam Operasional Pelayanan</h3>
+                  <p align="justify">
+                    <?= $data['data']['j1']; ?>
+                  </p>
+                  <p align="justify">
+                    <?= $data['data']['j2']; ?>
+                  </p>
+                  <p align="justify">
+                    <?= $data['data']['j3']; ?>
+                  </p>
+                </div>
+                <div class="col-lg-4 text-center order-1 order-lg-2">
+                  <img src="<?= BASEURL; ?>/public/img/features-2.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
     </div>
-  </section><!-- End Resume Section -->
-
-</main><!-- End #main -->
+  </section><!-- End Features Section -->

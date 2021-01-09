@@ -8,7 +8,7 @@
                 <h2>Bidang</h2>
                 <ol>
                     <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-                    <li>Bidang</li>
+                    <li>Bidang-Bidang</li>
                 </ol>
             </div>
 
