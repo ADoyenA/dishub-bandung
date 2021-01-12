@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Sep 2020 pada 12.35
+-- Waktu pembuatan: 12 Jan 2021 pada 04.21
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -117,7 +117,11 @@ CREATE TABLE `informasi` (
 --
 
 INSERT INTO `informasi` (`ID_informasi`, `img`, `judul_informasi`, `kategori`, `text_informasi`, `waktu_upload`, `ID_admin`) VALUES
-(4, '', 'Kota Bandung Akan Aktifkan Check Point Lagi', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2);
+(4, '', 'Kota Bandung Akan Aktifkan Check Point Lagi', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
+(12, '', 'Bus Bandros BandungBus Bandros Bandung', 'Informasi Berkala', 'Bandros atau Bandung tour on bus adalah bus yang ditujukan untuk wisatawan. Tampilan bus ini tak sama dengan bus pada umumnya, karena bus Bandros memiliki warna-warni permen dengan tema art deco.\r\n\r\nSaat naik bus Bandros kamu nggak cuma diajak berkeliling Bandung, tapi kamu juga akan diajak “mengenal Bandung lebih dalam”. Pasalnya di setiap Bandros ada pemandu wisatanya yang akan bercerita asal-usul jalan, kisah di setiap tempat wisata hingga beragam cerita lainnya.', '2020-12-27', 2),
+(13, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
+(14, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
+(15, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2);
 
 --
 -- Indexes for dumped tables
@@ -189,7 +193,7 @@ ALTER TABLE `foto_kegiatan`
 -- AUTO_INCREMENT untuk tabel `informasi`
 --
 ALTER TABLE `informasi`
-  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
