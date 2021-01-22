@@ -38,12 +38,41 @@ class adminModel{
             "judul_informasi" => ($data['judul_informasi']),
             "kategori" => ($data['kategori']),
             "text_informasi" => ($data['text_informasi']),
-           "waktu_upload" => ($data['waktu_upload']),
+            "waktu_upload" => ($data['waktu_upload']),
             "ID_admin" => ($data['ID_admin'])         
         ));
         $informasi = json_encode($createInformasi);
         $result = json_decode($informasi, true);
 
         return $createInformasi;
+    }
+
+    public function record($action, $data, $tanggal, $idAdmin)
+    {
+        $createLog = $this->API->CallAPI('POST', "log", "create", $data_array =  array(
+            "action" => ($action),
+            "data" => ($data),
+            "tanggal" => ($tanggal),
+            "ID_admin" => ($idAdmin['ID_admin'])         
+        ));
+        $record = json_encode($createLog);
+        //$result = json_decode($record, true);
+
+        return $record;
+
+    }
+
+    public function getLog($idAdmin)
+    {
+        $getLog = $this->API->CallAPI('GET', "log", "limit?ID_admin=" . $idAdmin, "");
+        $log = json_encode($getLog);
+        $json = json_decode($log, true);
+
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+        ];
+
+        return $result;
     }
 }

@@ -2,6 +2,7 @@
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
+        
 
             <div class="section-title">
                 <h2>Informasi</h2>
@@ -9,21 +10,37 @@
             </div>
 
             <table class="table table-bordered">
+            
                 <thead>
                     <tr>
-                        <th width="70" scope="col">No</th>
-                        <th scope="col">Judul Informasi</th>
+                        <th width="5%" scope="col">No</th>
+                        <th width="75%" scope="col">Judul Informasi</th>
                         <th scope="col">Opsi</th>
                     </tr>
                 </thead>
                 <tbody>
+                <?php $row = 0 ?>
+                <?php foreach ($data['informasiTerbaru']['body'] as $informasiTerbaru) : ?>
+                <?php $addRow = $row + 1 ?>
+                <?php  $row = $addRow ?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <th scope="row"><?= $addRow ?></th>
+                        <td><?= $informasiTerbaru['judul_informasi'] ?></td>
+                        <td>
+                            <span class="badge rounded-pill bg-primary">Website</span>
+                            <span class="badge rounded-pill bg-primary">Detail</span>
+                            <span class="badge rounded-pill bg-primary">Hapus</span>
+                        </td>
                     </tr>
                 </tbody>
+                <?php endforeach; ?>
             </table>
+
+
+
+
+
+
             <div class="col">
                 <p> Mulai menambahkan postingan informasi terbaru dengan klik <a href=""> tambah informasi </a> ini ! </p>
             </div>
@@ -55,12 +72,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php $row = 0 ?>
+                <?php foreach ($data['informasi']['body'] as $informasi) : ?>
+                <?php $addRow = $row + 1 ?>
+                <?php  $row = $addRow ?>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                    <th scope="row"><?= $addRow ?></th>
+                        <td><?= $informasi['judul_informasi'] ?></td>
+                        <td>
+                            <span class="badge rounded-pill bg-primary">Website</span>
+                            <span class="badge rounded-pill bg-primary">Detail</span>
+                            <span class="badge rounded-pill bg-primary">Hapus</span>
+                        </td>
                     </tr>
+                
                 </tbody>
+                <?php endforeach; ?>
             </table>
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-end">

@@ -29,6 +29,7 @@ class Admin extends Controller {
     public function dashboard()
     {
         $data['judul'] = 'Dashboard Admin';
+        $data['log'] = $this->model('adminModel')->getLog($_SESSION['ID_admin']);
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/headerAdmin', $data);
         $this->view('admin/dashboard', $data);
@@ -39,6 +40,15 @@ class Admin extends Controller {
     public function informasi()
     {
         $data['judul'] = 'Informasi Admin';
+        $data['row'] = 10;
+        $data['start'] = 1;
+        
+        $data['informasi'] = $this->model('userModel')->getLimitAllDataInformasi($data['start'], $data['row']);
+        //$data['rowsInformasi'] = $this->model('userModel')->getAllDataInformasi();
+        //$total = $data['rowsInformasi']['itemCount'];
+       // $data['pages'] = ceil($total / $data['row']);
+
+        $data['informasiTerbaru'] = $this->model('userModel')->getNewDataInformasi();
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/headerAdmin', $data);
         $this->view('admin/informasi', $data);
@@ -58,11 +68,20 @@ class Admin extends Controller {
     {
         if ($this->model('adminModel')->createInformasi($_POST) != ""){
             echo "Berhasil Menambahkan Data";
+
+            //contoh code log, tambahkan code ini pada proses yang benar
+            $this->model('adminModel')->record("tambah", "Informasi",  date('Y-m-d'), $_POST);
+
            // header('location: ' . BASEURL . '/admin/dasboard'); 
         }else {
+            //contoh code log, tambahkan code ini pada proses yang benar
+            $this->model('adminModel')->record("tambah", "informasi", date('Y-m-d'), $_POST);
+
             echo "Gagal Memasukan Data";
         }
     }
+
+    
 
 
     public function dokumentasi()
@@ -88,4 +107,14 @@ class Admin extends Controller {
     }
 
 
+
 }
+
+//Code untuk log aktivitas dimasukkan kedalam method, masukkan code ini kedalam proses yang benar
+//$this->model('adminModel')->record("Menambahkan", "Informasi", date('Y-m-d') ,$_SESSION['ID_admin']);
+//$this->model('adminModel')->record("Merubah", "Informasi", date('Y-m-d') ,$_SESSION['ID_admin']);
+//$this->model('adminModel')->record("Menghapus", "Informasi", date('Y-m-d'), $_SESSION['ID_admin']);
+//$this->model('adminModel')->record("Menambah", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
+//$this->model('adminModel')->record("Merubah", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
+//$this->model('adminModel')->record("Menghapus", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
+

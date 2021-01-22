@@ -24,6 +24,19 @@ class userModel{
         return $result;
     }
 
+    public function getNewDataInformasi()
+    {
+        $getInformasi = $this->API->CallAPI('GET', "Informasi/new", "read", "");
+        $informasi = json_encode($getInformasi);
+        $json = json_decode($informasi, true);
+
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+        ];
+
+        return $result;
+    }
     public function getLimitAllDataInformasi($page, $row)
     {
         $getInformasi = $this->API->CallAPI('GET', "informasi", "limit?page=" . $page . "&row_per_page=" . $row, "");
