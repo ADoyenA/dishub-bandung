@@ -47,6 +47,48 @@ class adminModel{
         return $createInformasi;
     }
 
+    // public function getInformasi($page, $row)
+    // {
+    //     $getInformasi = $this->API->CallAPI('GET', "admin/informasi", "limit?page=" . $page . "&row_per_page=" . $row, "");
+    //     $informasi = json_encode($getInformasi);
+    //     $json = json_decode($informasi, true);
+
+    //     $result = [
+    //         "body" => $json["body"],
+    //         "itemCount" => $json["itemCount"]
+    //     ];
+
+    //     return $result;
+    // }
+
+    public function getNewDataInformasi()
+    {
+        $getInformasi = $this->API->CallAPI('GET', "Informasi/new", "read", "");
+        $informasi = json_encode($getInformasi);
+        $json = json_decode($informasi, true);
+
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+        ];
+
+        return $result;
+    }
+
+    public function getNewDataDokumentasi()
+    {
+        // $getInformasi = $this->API->CallAPI('GET', "Informasi/new", "read", "");
+        // $informasi = json_encode($getInformasi);
+        // $json = json_decode($informasi, true);
+
+        // $result = [
+        //     "body" => $json["body"],
+        //     "itemCount" => $json["itemCount"]
+        // ];
+
+        // return $result;
+    }
+
     public function record($action, $data, $tanggal, $idAdmin)
     {
         $createLog = $this->API->CallAPI('POST', "log", "create", $data_array =  array(
@@ -75,4 +117,6 @@ class adminModel{
 
         return $result;
     }
+
+    
 }

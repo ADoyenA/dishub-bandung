@@ -40,15 +40,15 @@ class Admin extends Controller {
     public function informasi()
     {
         $data['judul'] = 'Informasi Admin';
-        $data['row'] = 10;
-        $data['start'] = 1;
+        // $data['row'] = 1000;
+        // $data['start'] = 1;
         
-        $data['informasi'] = $this->model('userModel')->getLimitAllDataInformasi($data['start'], $data['row']);
-        //$data['rowsInformasi'] = $this->model('userModel')->getAllDataInformasi();
+        //$data['informasi'] = $this->model('adminModel')->getInformasi($data['start'], $data['row']);
+        $data['informasi'] = $this->model('userModel')->getAllDataInformasi();
         //$total = $data['rowsInformasi']['itemCount'];
        // $data['pages'] = ceil($total / $data['row']);
 
-        $data['informasiTerbaru'] = $this->model('userModel')->getNewDataInformasi();
+        $data['informasiTerbaru'] = $this->model('adminModel')->getNewDataInformasi();
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/headerAdmin', $data);
         $this->view('admin/informasi', $data);
@@ -87,6 +87,8 @@ class Admin extends Controller {
     public function dokumentasi()
     {
         $data['judul'] = 'Dokumentasi Admin';
+        $data['dokumentasi'] = $this->model('userModel')->getAllDataDokumentasi();
+        $data['dokumentasiTerbaru'] = $this->model('adminModel')->getNewDataDokumentasi();
         $this->view('templates/beforeHeader', $data);
         $this->view('templates/headerAdmin', $data);
         $this->view('admin/dokumentasi', $data);

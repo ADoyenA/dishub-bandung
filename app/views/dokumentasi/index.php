@@ -29,9 +29,9 @@
         </ul>
       </div>
     </div>
-    <?php foreach ($data['dokumentasi'] as $dokumentasi) : ?>
+    
     <div class="row portfolio-container">
-
+      <?php foreach ($data['dokumentasi']['body'] as $dokumentasi) : ?>
       <div class="col-lg-4 col-md-6 portfolio-item filter-app">
         <div class="portfolio-wrap">
           <img src="<?= BASEURL; ?>/public/img/tilang.jpg" class="img-fluid" alt="">
@@ -44,8 +44,9 @@
             </div>
           </div>
         </div>
+        <?php endforeach; ?>
       </div>
-      <?php endforeach; ?>
+      
       <div class="col-lg-4 col-md-6 portfolio-item filter-web">
         <div class="portfolio-wrap">
           <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 12 Jan 2021 pada 04.21
+-- Waktu pembuatan: 24 Jan 2021 pada 05.07
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.4
 
@@ -39,7 +39,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`ID_admin`, `username`, `pwd`, `ID_detail_admin`) VALUES
-(2, 'shendi', 'ac95297dea1af2d00ce781eb899dda9b', 1);
+(2, 'shendi', 'ac95297dea1af2d00ce781eb899dda9b', 1),
+(3, 'dida', 'b9343bdbf698cbc25b1528b0512e6210', 2);
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,8 @@ CREATE TABLE `detail_admin` (
 --
 
 INSERT INTO `detail_admin` (`ID_detail_admin`, `nama`, `email`, `alamat`, `no_hp`) VALUES
-(1, 'shendi permana', 'shendi@gmail.com', 'jalan antapani lama', '085276894019');
+(1, 'shendi permana', 'shendi@gmail.com', 'jalan antapani lama', '085276894019'),
+(2, 'Dida Handian', 'dida@gmail.com', 'jln sumbawa kota Bandung Jawa Barat', '086789086542');
 
 -- --------------------------------------------------------
 
@@ -121,7 +123,33 @@ INSERT INTO `informasi` (`ID_informasi`, `img`, `judul_informasi`, `kategori`, `
 (12, '', 'Bus Bandros BandungBus Bandros Bandung', 'Informasi Berkala', 'Bandros atau Bandung tour on bus adalah bus yang ditujukan untuk wisatawan. Tampilan bus ini tak sama dengan bus pada umumnya, karena bus Bandros memiliki warna-warni permen dengan tema art deco.\r\n\r\nSaat naik bus Bandros kamu nggak cuma diajak berkeliling Bandung, tapi kamu juga akan diajak “mengenal Bandung lebih dalam”. Pasalnya di setiap Bandros ada pemandu wisatanya yang akan bercerita asal-usul jalan, kisah di setiap tempat wisata hingga beragam cerita lainnya.', '2020-12-27', 2),
 (13, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
 (14, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
-(15, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2);
+(15, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 2),
+(21, 'update lewat postman', 'Kota Bandung Akan Aktifkan Check Point Lagi update lewat pos', 'Informasi Berkala', 'Posko check point di Kota Bandung direncanakan akan kembali diaktifkan guna pencegahan penyebaran Covid-19.\r\n\r\nPemerintah Kota (Pemkot) Bandung melalui Dinas Perhubungan (Dishub) direncanakan mengaktifkan lagi check point di sejumlah jalur perbatasan Kota ataupun Kabupaten di ring 2 dan ring 3.\r\n\r\nMengenai pengaktifan kembali check point di Kota Bandung hal ini akan terlebih dahulu dilakukan pembahasan dalam forum lalu lintas angkutan jalan yang melibatkan banyak pihak.', '2020-09-14', 3);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `log`
+--
+
+CREATE TABLE `log` (
+  `ID_log` int(11) NOT NULL,
+  `action` varchar(20) NOT NULL,
+  `data` varchar(20) NOT NULL,
+  `tanggal` date NOT NULL,
+  `ID_admin` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `log`
+--
+
+INSERT INTO `log` (`ID_log`, `action`, `data`, `tanggal`, `ID_admin`) VALUES
+(1, 'Menambah', 'Informasi', '2021-01-16', 3),
+(2, 'Merubah', 'Informasi', '2021-01-16', 2),
+(6, 'Menghapus', 'Informasi', '2021-01-16', 2),
+(7, 'Menghapus', 'dokumentasi', '2021-01-16', 3),
+(9, 'Menghapus', 'Dokumentasi', '2021-01-16', 2);
 
 --
 -- Indexes for dumped tables
@@ -162,6 +190,13 @@ ALTER TABLE `informasi`
   ADD KEY `ID_admin` (`ID_admin`);
 
 --
+-- Indeks untuk tabel `log`
+--
+ALTER TABLE `log`
+  ADD PRIMARY KEY (`ID_log`),
+  ADD KEY `ID_admin` (`ID_admin`);
+
+--
 -- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
@@ -169,13 +204,13 @@ ALTER TABLE `informasi`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `ID_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `detail_admin`
 --
 ALTER TABLE `detail_admin`
-  MODIFY `ID_detail_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID_detail_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `dokumentasi`
@@ -193,7 +228,13 @@ ALTER TABLE `foto_kegiatan`
 -- AUTO_INCREMENT untuk tabel `informasi`
 --
 ALTER TABLE `informasi`
-  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `ID_informasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
+--
+-- AUTO_INCREMENT untuk tabel `log`
+--
+ALTER TABLE `log`
+  MODIFY `ID_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
@@ -222,6 +263,12 @@ ALTER TABLE `foto_kegiatan`
 --
 ALTER TABLE `informasi`
   ADD CONSTRAINT `informasi_ibfk_1` FOREIGN KEY (`ID_admin`) REFERENCES `admin` (`ID_admin`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Ketidakleluasaan untuk tabel `log`
+--
+ALTER TABLE `log`
+  ADD CONSTRAINT `log_ibfk_1` FOREIGN KEY (`ID_admin`) REFERENCES `admin` (`ID_admin`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

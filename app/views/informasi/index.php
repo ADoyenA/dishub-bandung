@@ -16,7 +16,7 @@
  <!-- ======= Informasi Section ======= -->
  <section id="blog" class="blog">
    <div class="container">
-     <?php var_dump($data['informasi']['itemCount']) ?>
+     <?php //var_dump($data['informasi']['itemCount']) ?>
      <div class="row">
        <?php foreach ($data['informasi']['body'] as $informasi) : ?>
          <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">

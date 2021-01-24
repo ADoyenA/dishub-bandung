@@ -8,8 +8,22 @@
                 <h2>Informasi</h2>
                 <p>Postingan Informasi Terbaru</p>
             </div>
-
-            <table class="table table-bordered">
+            <!-- <nav aria-label="Page navigation example">
+                <ul id="manyRows" class="pagination">
+                    <li class="page-item"><a class="page-link" href="#"> < </a></li>
+                    <li class="page-item disabled"><a class="page-link" href="#" aria-disabled="true">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#"> > </a></li>
+                </ul>
+            </nav> -->
+            <select name="state" id="manyRows" class="form-control" style="width:150px">
+                    <option value="5">Show All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+            </select>
+            <table id="newInformasi" class="table table-bordered">
             
                 <thead>
                     <tr>
@@ -57,17 +71,25 @@
                 <p>Tabel Informasi</p>
             </div>
 
+            <select name="state" id="maxRows" class="form-control" style="width:150px">
+                    <option value="5000">Show All</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+            </select>
+
             <nav class="navbar navbar-light bg-light">
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </nav>
-            <table class="table table-bordered">
+            
+            <table id="semuaInformasi" class="table table-bordered">
                 <thead>
                     <tr>
-                        <th width="70" scope="col">No</th>
-                        <th scope="col">Judul Informasi</th>
+                        <th width="5%" scope="col">No</th>
+                        <th width="75%" scope="col">Judul Informasi</th>
                         <th scope="col">Opsi</th>
                     </tr>
                 </thead>
@@ -91,7 +113,7 @@
             </table>
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-end">
-                    <li class="page-item disabled">
+                    <!-- <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1">Previous</a>
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -99,7 +121,7 @@
                     <li class="page-item"><a class="page-link" href="#">3</a></li>
                     <li class="page-item">
                         <a class="page-link" href="#">Next</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </div>
