@@ -31,10 +31,10 @@ class adminModel{
        return $this->db->single();
     }
 
-    public function createInformasi($data)
+    public function createInformasi($data, $img)
     {
         $createInformasi = $this->API->CallAPI('POST', "informasi", "create", $data_array =  array(
-            "img" => ($data['img']),
+            "img" => ($img),
             "judul_informasi" => ($data['judul_informasi']),
             "kategori" => ($data['kategori']),
             "text_informasi" => ($data['text_informasi']),
@@ -116,6 +116,40 @@ class adminModel{
         ];
 
         return $result;
+    }
+
+    public function createDokumentasi($data, $img_cover)
+    {
+        $createDokumentasi = $this->API->CallAPI('POST', "dokumentasi", "create", $data_array =  array(
+            "img_cover" => ($img_cover),
+            "judul_dokumentasi" => ($data['judul_dokumentasi']),
+            "text_dokumentasi" => ($data['text_dokumentasi']),
+            "waktu_upload" => ($data['waktu_upload']),
+            "ID_admin" => ($data['ID_admin'])    
+        ));  
+        $dokumentasi = json_encode($createDokumentasi);
+        $result = json_decode($dokumentasi, true);
+
+        return $createDokumentasi;
+    }
+
+    public function createFotoKegiatan($data, $foto)
+    {
+        $createFotoKegiatan = $this->API->CallAPI('POST', "fotoKegiatan", "create", $data_array = array(
+         "foto" => ($foto),
+         "ID_dokumentasi" => ($data['ID_dokumentasi'])
+        ));
+        $foto = json_encode($createFotoKegiatan);
+        $result = json_decode($foto, true);
+
+        return $createFotoKegiatan;
+    }
+
+    public function getIdDokumentasi($data)
+    {
+        $this->db->query('SELECT ID_dokumentasi FROM dokumentasi WHERE judul_dokumentasi=:judul_dokumentasi');
+        $this->db->bind('judul_dokumentasi', $data['judul_dokumentasi']);
+        return $this->db->single();
     }
 
     
