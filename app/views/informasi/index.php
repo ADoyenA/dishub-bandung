@@ -16,7 +16,8 @@
  <!-- ======= Informasi Section ======= -->
  <section id="blog" class="blog">
    <div class="container">
-     <?php //var_dump($data['informasi']['itemCount']) ?>
+     <?php //var_dump($data['informasi']['itemCount']) 
+      ?>
      <div class="row">
        <?php foreach ($data['informasi']['body'] as $informasi) : ?>
          <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
@@ -27,7 +28,7 @@
              </div>
 
              <h2 class="entry-title">
-               <a href="<?= BASEURL; ?>/informasi/informasiSingle"><?= $informasi['judul_informasi'] ?></a>
+               <a href="<?= BASEURL; ?>/informasi/detailInformasi/<?= $informasi['ID_informasi'] ?>"><?= $informasi['judul_informasi'] ?></a>
              </h2>
              <div class="entry-meta">
                <ul>
@@ -56,7 +57,7 @@
          <?php if ($data['start'] > 1) : ?>
            <li><a href="<?= BASEURL; ?>/informasi/<?= ($data['start'] - 1) ?>"><i class="icofont-rounded-left"></i></a></li>
          <?php endif; ?>
-         
+
          <?php for ($i = 1; $i <= $data['pages']; $i++) : ?>
            <?php $active_class = "" ?>
            <?php if ($i == $data['start']) : ?>
@@ -65,7 +66,7 @@
            <li class="<?= $active_class ?>"><a href="<?= BASEURL; ?>/informasi/<?= $i ?>"><?= $i; ?></a></li>
          <?php endfor; ?>
 
-         <?php if ( $data['start'] < $data['pages']) : ?>
+         <?php if ($data['start'] < $data['pages']) : ?>
            <li><a href="<?= BASEURL; ?>/informasi/<?= ($data['start'] + 1) ?>"><i class="icofont-rounded-right"></i></a></li>
          <?php endif; ?>
        </ul>

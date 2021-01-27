@@ -24,7 +24,7 @@
             <article class="entry entry-single">
 
               <div class="entry-img">
-                <img src="<?= BASEURL; ?>/public/img/<?= $data['informasi']['img'] ?>" alt="" class="img-fluid">
+                <img src="<?= BASEURL; ?>/public/img/dishub1.png" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
