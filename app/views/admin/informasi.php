@@ -51,13 +51,13 @@
                     <?php $addRow = $row + 1 ?>
                     <?php $row = $addRow ?>
                     <tr>
+                    
                         <th scope="row"><?= $addRow ?></th>
                         <td><?= $informasiTerbaru['judul_informasi'] ?></td>
                         <td>
-                            <span class="badge rounded-pill bg-primary">Website</span>
-                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasiTerbaru['ID_informasi'] ?>">Detail</a></span>
-                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasiTerbaru['ID_informasi']?>/<?= $informasiTerbaru['img'] ?>">Hapus</span>
-
+                            <span class="badge rounded-pill bg-primary text-white">Website</span>
+                            <span class="badge rounded-pill bg-warning text-white"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasiTerbaru['ID_informasi'] ?>">Detail</a></span>
+                            <span class="badge rounded-pill bg-danger text-white"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasiTerbaru['ID_informasi']?>/<?= $informasiTerbaru['img'] ?>">Hapus</a></span>
                         </td>
                     </tr>
             </tbody>
@@ -118,9 +118,9 @@
                         <th scope="row"><?= $addRow ?></th>
                         <td><?= $informasi['judul_informasi'] ?></td>
                         <td>
-                            <span class="badge rounded-pill bg-primary">Website</span>
-                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasi['ID_informasi'] ?>">Detail</span>
-                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasi['ID_informasi']?>/<?= $informasi['img'] ?>">Hapus</span>
+                            <span class="badge rounded-pill bg-primary text-white">Website</span>
+                            <span class="badge rounded-pill bg-warning text-white"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasiTerbaru['ID_informasi'] ?>">Detail</a></span>
+                            <span class="badge rounded-pill bg-danger text-white"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasiTerbaru['ID_informasi']?>/<?= $informasiTerbaru['img'] ?>">Hapus</a></span>
 
                         </td>
                     </tr>
