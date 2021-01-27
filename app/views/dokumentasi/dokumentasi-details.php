@@ -8,12 +8,14 @@
 
           <div class="col-lg-8">
             <h2 class="dokumentasi-title"><?= $data['dokumentasi']['judul_dokumentasi'] ?></h2>
+            <?php foreach ($data['fotoKegiatan']['body'] as $fotoKegiatan) : ?>
             <div class="owl-carousel portfolio-details-carousel">
-              <img src="<?= BASEURL; ?>/public/img/tilang.jpg" class="img-fluid" alt="">
-              <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="">
-              <img src="<?= BASEURL; ?>/public/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="">
+              <img src="<?= BASEURL; ?>/public/img/<?= $fotoKegiatan['foto'] ?>" class="img-fluid" alt="">
+              <img src="<?= BASEURL; ?>/public/img/<?= $fotoKegiatan['foto'] ?>" class="img-fluid" alt="">
+              <img src="<?= BASEURL; ?>/public/img/<?= $fotoKegiatan['foto'] ?>" class="img-fluid" alt="">
             </div>
           </div>
+          <?php endforeach; ?>
 
           <div class="col-lg-4 portfolio-info">
             <h3>Project information</h3>

@@ -65,19 +65,25 @@ class Admin extends Controller
 
     public function createInformasi()
     {
-        if ($this->model('adminModel')->createInformasi($_POST) != "") {
+
+        $nama_file = $_FILES['img']['name'];
+        //$ukuran_file = $_FILES['img']['size'];
+        //$tipe_file = $_FILES['img']['type'];
+        $tmp_file = $_FILES['img']['tmp_name'];
+        $path = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file;
+
+        if(move_uploaded_file($tmp_file, $path)){
+            if ($this->model('adminModel')->createInformasi($_POST, $nama_file) != ""){
             echo "Berhasil Menambahkan Data";
 
             //contoh code log, tambahkan code ini pada proses yang benar
             $this->model('adminModel')->record("tambah", "Informasi",  date('Y-m-d'), $_POST);
 
-            // header('location: ' . BASEURL . '/admin/dasboard'); 
-        } else {
-            //contoh code log, tambahkan code ini pada proses yang benar
-            $this->model('adminModel')->record("tambah", "informasi", date('Y-m-d'), $_POST);
-
-            echo "Gagal Memasukan Data";
+            }
+        }else{
+            echo "Maaf, gambar gagal untuk diupload.";
         }
+    
     }
 
 
@@ -94,6 +100,43 @@ class Admin extends Controller
         $this->view('templates/footerAdmin', $data);
         $this->view('templates/afterFooter', $data);
     }
+
+
+    public function tambahDokumentasi()
+    {
+        $data['judul'] = 'Tambah Dokumentasi';
+        $this->view('templates/beforeHeader', $data);
+        $this->view('admin/tambah-dokumentasi', $data);
+        $this->view('templates/afterFooter', $data);
+    }
+
+    public function createDokumentasi()
+    {
+        $nama_file1 = $_FILES['img_cover']['name'];
+        $jumlah_file = count($_FILES['foto']['name']);
+        $tmp_file1 = $_FILES['img_cover']['tmp_name'];
+        $path1 = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file1;
+
+       
+        if(move_uploaded_file($tmp_file1, $path1)){
+            $this->model('adminModel')->createDokumentasi($_POST, $nama_file1);
+            for($x=0; $x<$jumlah_file; $x++){
+                $nama_file2 = $_FILES['foto']['name'][$x];
+                $tmp_file2 = $_FILES['foto']['tmp_name'][$x];
+                $path2 = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file2;
+                move_uploaded_file($tmp_file2, $path2);
+           $this->model('adminModel')->record("tambah", "dokumentasi", date('Y-m-d'), $_POST);
+           $Id_dokumentasi = $this->model('adminModel')->getIdDokumentasi($_POST);
+            $this->model('adminModel')->createFotoKegiatan($Id_dokumentasi, $nama_file2);
+            }
+            echo "Berhasil Menambahkan Data";
+
+        }else{
+            echo "Maaf, gambar gagal untuk diupload.";
+             }
+    
+    }
+
 
 
 

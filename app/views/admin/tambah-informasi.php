@@ -61,7 +61,9 @@
     </section>
 
 
-    <form action="<?= BASEURL; ?>/admin/CreateInformasi" method="post">
+
+<body>
+    <form action="<?= BASEURL; ?>/admin/CreateInformasi" method="post" enctype="multipart/form-data">
         <label for="fjudul">Judul Informasi:</label>
         <input type="text" name="judul_informasi" id="judul" required><br>
         <label for="fimg">Gambar:</label>
@@ -71,8 +73,15 @@
         <label for="ftext">Text:</label>
         <input type="text" name="text_informasi" id="text" required><br>
         <label for="fIdAdmin">ID admin:</label>
+
         <input type="text" name="ID_admin" id="IdAdmin" value="<?= $_SESSION['ID_admin']; ?>" readonly><br><br>
         <input type="text" name="waktu_upload" id="IdAdmin" value="<?= date("Y-m-d"); ?>" readonly><br><br>
 
         <button type="submit">Submit</button>
     </form>
+</body>
+            </ul>
+        </center>
+    </div>
+</div>
+

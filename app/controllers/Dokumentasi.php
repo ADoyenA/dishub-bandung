@@ -14,6 +14,7 @@ Class Dokumentasi extends controller{
     public function dokumentasiDetails($id){
         $data['judul'] = 'Detail Dokumentasi';
         $data['dokumentasi'] = $this->model('userModel')->getDokumentasiById($id);
+        $data['fotoKegiatan'] = $this ->model('userModel')->getFotoKegiatanById($id);
         $this->view('templates/beforeHeader', $data);
         $this->view('dokumentasi/dokumentasi-details', $data);
         $this->view('templates/afterFooter', $data);
