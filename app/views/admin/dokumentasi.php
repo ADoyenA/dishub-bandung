@@ -29,7 +29,7 @@
                 </tbody>
             </table>
             <div class="col">
-                <p>Mulai menambahkan postingan informasi terbaru dengan klik <a href=""> tambah dokumentasi </a> ini ! </p>
+                <p>Mulai menambahkan postingan informasi terbaru dengan klik <a href="<?= BASEURL; ?>/admin/tambahDokumentasi">Tambah Dokumentasi</a> ini ! </p>
             </div>
         </div>
         </div>
