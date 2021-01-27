@@ -121,21 +121,14 @@
                 <div class="col-lg-8 details order-2 order-lg-1">
                   <h3>Biaya / Tarif</h3>
                   <ol align="justify">
-                    <li><?= $data['data']['b1']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b2']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b3']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b4']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b5']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b6']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b7']; ?></li>
-                    <br>
-                    <li><?= $data['data']['b8']; ?></li>
+                    <?= $data['data']['b1']; ?>
+                    <?= $data['data']['b2']; ?>
+                    <?= $data['data']['b3']; ?>
+                    <?= $data['data']['b4']; ?>
+                    <?= $data['data']['b5']; ?>
+                    <?= $data['data']['b6']; ?>
+                    <?= $data['data']['b7']; ?>
+                    <?= $data['data']['b8']; ?>
                   </ol>
                 </div>
                 <div class="col-lg-4 text-center order-1 order-lg-2">

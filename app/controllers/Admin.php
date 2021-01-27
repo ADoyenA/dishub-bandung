@@ -1,6 +1,7 @@
 <?php
 
-class Admin extends Controller {
+class Admin extends Controller
+{
 
     public function index()
     {
@@ -12,17 +13,15 @@ class Admin extends Controller {
 
     public function masuk()
     {
-        if ($this->model('adminModel')->masukAdmin($_POST) > 0)
-        { 
+        if ($this->model('adminModel')->masukAdmin($_POST) > 0) {
             $username = $_POST["username"];
             $data['admin'] = $this->model('adminModel')->getAdminByUsername($username);
             $_SESSION['ID_admin'] = $data['admin']['ID_admin'];
             header('location: ' . BASEURL . '/admin/dashboard');
-        }else {
-            
-            Pesan::setPesan('danger', 'Email dan Password Anda Salah');
-            header('location: ' . BASEURL . '/admin'); 
-            
+        } else {
+
+            Pesan::setPesan('danger', 'Username dan Password Anda Salah');
+            header('location: ' . BASEURL . '/admin');
         }
     }
 
@@ -42,11 +41,11 @@ class Admin extends Controller {
         $data['judul'] = 'Informasi Admin';
         // $data['row'] = 1000;
         // $data['start'] = 1;
-        
+
         //$data['informasi'] = $this->model('adminModel')->getInformasi($data['start'], $data['row']);
         $data['informasi'] = $this->model('userModel')->getAllDataInformasi();
         //$total = $data['rowsInformasi']['itemCount'];
-       // $data['pages'] = ceil($total / $data['row']);
+        // $data['pages'] = ceil($total / $data['row']);
 
         $data['informasiTerbaru'] = $this->model('adminModel')->getNewDataInformasi();
         $this->view('templates/beforeHeader', $data);
@@ -63,9 +62,10 @@ class Admin extends Controller {
         $this->view('admin/tambah-informasi', $data);
         $this->view('templates/afterFooter', $data);
     }
-    
+
     public function createInformasi()
     {
+
         $nama_file = $_FILES['img']['name'];
         //$ukuran_file = $_FILES['img']['size'];
         //$tipe_file = $_FILES['img']['type'];
@@ -79,14 +79,14 @@ class Admin extends Controller {
             //contoh code log, tambahkan code ini pada proses yang benar
             $this->model('adminModel')->record("tambah", "Informasi",  date('Y-m-d'), $_POST);
 
-           // header('location: ' . BASEURL . '/admin/dasboard'); 
+  // header('location: ' . BASEURL . '/admin/dasboard'); 
         }else{
             echo "Maaf, gambar gagal untuk diupload.";
         }
     
     }
 
-    
+
 
 
     public function dokumentasi()
@@ -100,6 +100,7 @@ class Admin extends Controller {
         $this->view('templates/footerAdmin', $data);
         $this->view('templates/afterFooter', $data);
     }
+
 
     public function tambahDokumentasi()
     {
@@ -117,8 +118,6 @@ class Admin extends Controller {
         $path1 = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file1;
 
        
-
-
         if(move_uploaded_file($tmp_file1, $path1)){
             $this->model('adminModel')->createDokumentasi($_POST, $nama_file1);
             for($x=0; $x<$jumlah_file; $x++){
@@ -185,7 +184,7 @@ class Admin extends Controller {
     }
 
 
-   
+
 
     public function logout()
     {
@@ -196,9 +195,6 @@ class Admin extends Controller {
         session_destroy();
         header('location: ' . BASEURL . '/admin');
     }
-
-
-
 }
 
 //Code untuk log aktivitas dimasukkan kedalam method, masukkan code ini kedalam proses yang benar
@@ -208,4 +204,3 @@ class Admin extends Controller {
 //$this->model('adminModel')->record("Menambah", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
 //$this->model('adminModel')->record("Merubah", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
 //$this->model('adminModel')->record("Menghapus", "Dokumentasi", date('Y-m-d'), $_SESSION['ID_admin']);
-

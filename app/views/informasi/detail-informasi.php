@@ -24,7 +24,7 @@
             <article class="entry entry-single">
 
               <div class="entry-img">
-                <img src="<?= BASEURL; ?>/public/img/<?= $data['informasi']['img'] ?>" alt="" class="img-fluid">
+                <img src="<?= BASEURL; ?>/public/img/dishub1.png" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -33,7 +33,7 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Can Nyokot data ti API</a></li>
+                  <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html">Admin</a></li>
                   <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01"><?= $data['informasi']['waktu_upload']?></time></a></li>
                   <!-- <li class="d-flex align-items-center"><i class="icofont-comment"></i> <a href="blog-single.html">12 Comments</a></li> -->
                 </ul>

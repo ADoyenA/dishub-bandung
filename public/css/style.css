@@ -2479,3 +2479,15 @@ section {
 #footer .credits a:hover {
   color: white;
 }
+
+form.admin .form-group {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 1.5rem 1rem;
+}
+
+form.admin .btn-admin {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+}

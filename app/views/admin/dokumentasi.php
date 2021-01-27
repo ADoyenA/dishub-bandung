@@ -1,4 +1,21 @@
-<main>
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2><?= $data['judul']; ?></h2>
+                <ol>
+                    <li><a href="<?= BASEURL; ?>/admin/dashboard">Dashboard</a></li>
+                    <li><?= $data['judul']; ?></li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Contact Section ======= -->
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
         <div class="container" data-aos="fade-up">
@@ -21,15 +38,17 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>
-                            <span class="badge rounded-pill bg-primary">Website</span>
-                            <span class="badge rounded-pill bg-primary">Detail</span>
-                            <span class="badge rounded-pill bg-primary">Hapus</span>
+                            <span class="badge rounded-pill bg-primary text-white">Website</span>
+                            <span class="badge rounded-pill bg-warning text-white">Detail</span>
+                            <span class="badge rounded-pill bg-danger text-white">Hapus</span>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="col">
+
                 <p>Mulai menambahkan postingan informasi terbaru dengan klik <a href="<?= BASEURL; ?>/admin/tambahDokumentasi">Tambah Dokumentasi</a> ini ! </p>
+
             </div>
         </div>
         </div>
@@ -44,12 +63,12 @@
                 <p>Tabel Dokumentasi</p>
             </div>
 
-            
+
             <select name="state" id="maxRows" class="form-control" style="width:150px">
-                    <option value="5000">Show All</option>
-                    <option value="2">2</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
+                <option value="5000">Show All</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
 
             <nav class="navbar navbar-light bg-light">
@@ -67,21 +86,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php $row = 0 ?>
-                <?php foreach ($data['dokumentasi']['body'] as $dokumentasi) : ?>
-                <?php $addRow = $row + 1 ?>
-                <?php  $row = $addRow ?>
-                    <tr>
-                    <th scope="row"><?= $addRow ?></th>
-                        <td><?= $dokumentasi['judul_dokumentasi'] ?></td>
-                        <td>
-                            <span class="badge rounded-pill bg-primary">Website</span>
-                            <span class="badge rounded-pill bg-primary">Detail</span>
-                            <span class="badge rounded-pill bg-primary">Hapus</span>
-                        </td>
-                    </tr>
+                    <?php $row = 0 ?>
+                    <?php foreach ($data['dokumentasi']['body'] as $dokumentasi) : ?>
+                        <?php $addRow = $row + 1 ?>
+                        <?php $row = $addRow ?>
+                        <tr>
+                            <th scope="row"><?= $addRow ?></th>
+                            <td><?= $dokumentasi['judul_dokumentasi'] ?></td>
+                            <td>
+                                <span class="badge rounded-pill bg-primary text-white">Website</span>
+                                <span class="badge rounded-pill bg-warning text-white">Detail</span>
+                                <span class="badge rounded-pill bg-danger text-white">Hapus</span>
+                            </td>
+                        </tr>
                 </tbody>
-                <?php endforeach; ?>
+            <?php endforeach; ?>
             </table>
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-end">
