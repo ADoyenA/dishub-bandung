@@ -31,7 +31,7 @@
              </h2>
              <div class="entry-meta">
                <ul>
-                 <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle">Can nyokot ti database</a></li>
+                 <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle">Admin</a></li>
                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><?= $informasi['waktu_upload'] ?></a></li>
                </ul>
              </div>
