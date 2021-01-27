@@ -6,34 +6,37 @@
         <div class="carousel-inner" role="listbox">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide-1.jpg)">
+            <div class="carousel-item active" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide4.png)">
                 <div class="carousel-container">
                     <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Sailor</span></h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        <h2 class="animate__animated animate__fadeInDown">Welcome to Official Website Dinas Perhubungan Kota Bandung</h2>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide-2.jpg)">
+            <div class="carousel-item" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide2.png)">
                 <div class="carousel-container">
                     <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        <h2 class="animate__animated animate__fadeInDown"></h2>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide-3.jpg)">
+            <div class="carousel-item" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide3.png)">
                 <div class="carousel-container">
                     <div class="container">
-                        <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-                        <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                        <h2 class="animate__animated animate__fadeInDown"></h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item" style="background-image: url(<?= BASEURL; ?>/public/img/slide/slide1.png)">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown"></h2>
                     </div>
                 </div>
             </div>
@@ -63,8 +66,8 @@
 
                 <div class="row no-gutters">
                     <div class="col-lg-6 video-box">
-                        <img src="<?= BASEURL; ?>/public/img/about.jpg" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                        <img src="<?= BASEURL; ?>/public/img/dishubkotabandunghome.jpg" class="img-fluid" alt="">
+                        <a href="https://youtu.be/0sX8NmLxQQs" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
                     </div>
 
                     <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
@@ -93,27 +96,27 @@
                 <div class="row">
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-1.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/clients/ppt.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-2.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/clients/atcs.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-3.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/clients/bidspt.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-4.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/clients/bus.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-5.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/clients/bandros.png" class="img-fluid" alt="">
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="<?= BASEURL; ?>/public/img/clients/client-6.png" class="img-fluid" alt="">
+                        <img src="<?= BASEURL; ?>/public/img/boseh.png" class="img-fluid" alt="">
                     </div>
 
                 </div>
@@ -140,7 +143,6 @@
                                 <i class="bx bxl-dribbble"></i>
                             </div>
                             <h4><a href="">Pengujian Kendaraan (KIR)</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                         </div>
                     </div>
 
@@ -153,7 +155,6 @@
                                 <i class="bx bx-file"></i>
                             </div>
                             <h4><a href="">Rekomendasi Penyelenggaraan Parkir</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                         </div>
                     </div>
 
@@ -165,8 +166,8 @@
                                 </svg>
                                 <i class="bx bx-tachometer"></i>
                             </div>
-                            <h4><a href="">Angkutan</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <h4><a href="">Bandung Tour On Bus (BANDROS)</a></h4>
+
                         </div>
                     </div>
 
@@ -178,8 +179,8 @@
                                 </svg>
                                 <i class="bx bx-layer"></i>
                             </div>
-                            <h4><a href="">Parkir On-Street</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <h4><a href="">Bike Share Bandung (BOSEH)</a></h4>
+
                         </div>
                     </div>
 
