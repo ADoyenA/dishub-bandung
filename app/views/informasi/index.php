@@ -23,7 +23,7 @@
            <article class="entry">
 
              <div class="entry-img">
-               <img src="<?= BASEURL; ?>/public/img/dishub1.PNG" alt="" class="img-fluid">
+               <img src="<?= BASEURL; ?>/public/img/<?= $informasi['img'] ?>" alt="" class="img-fluid">
              </div>
 
              <h2 class="entry-title">

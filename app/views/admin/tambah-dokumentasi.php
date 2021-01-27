@@ -12,15 +12,15 @@
 </head>
 
 <body>
-    <form action="<?= BASEURL; ?>/admin/CreateInformasi" method="post" enctype="multipart/form-data">
-        <label for="fjudul">Judul Informasi:</label>
-        <input type="text" name="judul_informasi" id="judul" required><br>
-        <label for="fimg">Gambar:</label>
-        <input type="file" name="img" id="img" required/><br>
-        <label for="fkategori">Kategori:</label>
-        <input type="text" name="kategori" id="kategori" required><br>
+    <form action="<?= BASEURL; ?>/admin/CreateDokumentasi" method="post" enctype="multipart/form-data">
+        <label for="fjudul">Judul Dokumentasi:</label>
+        <input type="text" name="judul_dokumentasi" id="judul" required><br>
+        <label for="fimg">Cover Gambar:</label>
+        <input type="file" name="img_cover" id="img_cover" required/><br>
+        <label for="fimg">Gambar Lainnya:</label>
+        <input type="file" name="foto[]" id="foto" multiple="multiple" required /><br>
         <label for="ftext">Text:</label>
-        <input type="text" name="text_informasi" id="text" required><br>
+        <input type="text" name="text_dokumentasi" id="text" required><br>
         <label for="fIdAdmin">ID admin:</label>
         <input type="text" name="ID_admin" id="IdAdmin"  value="<?= $_SESSION['ID_admin'];?>" readonly><br><br>
         <input type="text" name="waktu_upload" id="IdAdmin"  value="<?=  date("Y-m-d"); ?>" readonly><br><br>
