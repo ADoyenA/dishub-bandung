@@ -95,7 +95,7 @@ class adminModel{
             "action" => ($action),
             "data" => ($data),
             "tanggal" => ($tanggal),
-            "ID_admin" => ($idAdmin['ID_admin'])         
+            "ID_admin" => ($idAdmin)         
         ));
         $record = json_encode($createLog);
         //$result = json_decode($record, true);
@@ -152,5 +152,32 @@ class adminModel{
         return $this->db->single();
     }
 
+    public function updateInformasi($data, $img)
+    {
+        $updateInformasi = $this->API->CallAPI('POST', "informasi", "update", $data_array = array(
+            "ID_informasi" => ($data['ID_informasi']),
+            "img" => ($img),
+            "judul_informasi" => ($data['judul_informasi']),
+            "kategori" => ($data['kategori']),
+            "text_informasi" => ($data['text_informasi']),
+            "waktu_upload" => ($data['waktu_upload']),
+            "ID_admin" => ($data['ID_admin']) 
+        ));
+        $informasi = json_encode($updateInformasi);
+        $result = json_decode($informasi, true);
+
+        return $updateInformasi;
+    }
+
+    public function deleteInformasi($data)
+    {
+        $deleteInformasi = $this->API->CallAPI('DELETE', "informasi", "delete", $data_array = array(
+            "ID_informasi" => ($data)
+        ));
+        $informasi = json_encode($deleteInformasi);
+        $result = json_decode($informasi, true);
+
+        return $deleteInformasi;
+    }
     
 }

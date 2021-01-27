@@ -73,13 +73,13 @@ class Admin extends Controller
         $path = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file;
 
         if(move_uploaded_file($tmp_file, $path)){
-            if ($this->model('adminModel')->createInformasi($_POST, $nama_file) != ""){
+            $this->model('adminModel')->createInformasi($_POST, $nama_file);
             echo "Berhasil Menambahkan Data";
 
             //contoh code log, tambahkan code ini pada proses yang benar
             $this->model('adminModel')->record("tambah", "Informasi",  date('Y-m-d'), $_POST);
 
-            }
+  // header('location: ' . BASEURL . '/admin/dasboard'); 
         }else{
             echo "Maaf, gambar gagal untuk diupload.";
         }
@@ -135,6 +135,52 @@ class Admin extends Controller
             echo "Maaf, gambar gagal untuk diupload.";
              }
     
+    }
+
+    public function editInformasi($id)
+    {
+        $data['judul'] = 'Edit Informasi';
+        $data['informasi'] = $this->model('userModel')->getInformasiById($id);
+        $this->view('templates/beforeHeader', $data);
+        $this->view('admin/edit-informasi', $data);
+        $this->view('templates/afterFooter', $data);
+    }
+
+    public function editDataInformasi()
+    {
+        $nama_file = $_FILES['img']['name'];
+        //$ukuran_file = $_FILES['img']['size'];
+        //$tipe_file = $_FILES['img']['type'];
+        $tmp_file = $_FILES['img']['tmp_name'];
+        $path = "D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file;
+
+        if(move_uploaded_file($tmp_file, $path)){
+            $this->model('adminModel')->updateInformasi($_POST, $nama_file);
+            echo "Berhasil Merubah Data";
+
+            //contoh code log, tambahkan code ini pada proses yang benar
+            $this->model('adminModel')->record("rubah", "Informasi",  date('Y-m-d'), $_POST);
+
+           // header('location: ' . BASEURL . '/admin/dasboard'); 
+ 
+        }else{
+            echo "Maaf, gagal Merubah Data.";
+        }
+
+    }
+
+    public function deleteInformasi($data,$nama_file)
+    {
+        if (unlink("D:/xampp/htdocs/dishub-bandung/public/img/".$nama_file)){
+            $this->model('adminModel')->deleteInformasi($data);
+
+            echo "Berhasil Menghapus Data";
+            $this->model('adminModel')->record("hapus", "Informasi",  date('Y-m-d'), $_SESSION['ID_admin']);
+
+        }else{
+            echo "Gagal Menghapus Data";
+        }
+
     }
 
 

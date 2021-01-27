@@ -54,9 +54,10 @@
                         <th scope="row"><?= $addRow ?></th>
                         <td><?= $informasiTerbaru['judul_informasi'] ?></td>
                         <td>
-                            <span class="badge rounded-pill bg-primary text-white">Website</span>
-                            <span class="badge rounded-pill bg-warning text-white">Detail</span>
-                            <span class="badge rounded-pill bg-danger text-white">Hapus</span>
+                            <span class="badge rounded-pill bg-primary">Website</span>
+                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasiTerbaru['ID_informasi'] ?>">Detail</a></span>
+                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasiTerbaru['ID_informasi']?>/<?= $informasiTerbaru['img'] ?>">Hapus</span>
+
                         </td>
                     </tr>
             </tbody>
@@ -68,9 +69,11 @@
 
 
 
-        <div class="col">
-            <p> Mulai menambahkan postingan informasi terbaru dengan klik <a href="<?= BASEURL; ?>/admin/tambahInformasi"> tambah informasi </a> ini ! </p>
-        </div>
+
+            <div class="col">
+                <p> Mulai menambahkan postingan informasi terbaru dengan klik <a href="<?= BASEURL; ?>/admin/tambahInformasi">Tambah Informasi</a> ini ! </p>
+            </div>
+
     </div>
     </div>
 </section><!-- End Services Section -->
@@ -115,9 +118,10 @@
                         <th scope="row"><?= $addRow ?></th>
                         <td><?= $informasi['judul_informasi'] ?></td>
                         <td>
-                            <span class="badge rounded-pill bg-primary text-white">Website</span>
-                            <span class="badge rounded-pill bg-warning text-white">Detail</span>
-                            <span class="badge rounded-pill bg-danger text-white">Hapus</span>
+                            <span class="badge rounded-pill bg-primary">Website</span>
+                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/editInformasi/<?= $informasi['ID_informasi'] ?>">Detail</span>
+                            <span class="badge rounded-pill bg-primary"><a href="<?= BASEURL; ?>/admin/deleteInformasi/<?= $informasi['ID_informasi']?>/<?= $informasi['img'] ?>">Hapus</span>
+
                         </td>
                     </tr>
 
