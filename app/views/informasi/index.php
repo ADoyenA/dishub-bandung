@@ -24,15 +24,15 @@
            <article class="entry">
 
              <div class="entry-img">
-               <img src="<?= BASEURL; ?>/public/img/dishub1.PNG" alt="" class="img-fluid">
+               <img src="<?= BASEURL; ?>/public/img/<?= $informasi['img'] ?>" alt="" class="img-fluid">
              </div>
 
              <h2 class="entry-title">
-               <a href="<?= BASEURL; ?>/informasi/informasiSingle"><?= $informasi['judul_informasi'] ?></a>
+               <a href="<?= BASEURL; ?>/informasi/detailInformasi/<?= $informasi['ID_informasi'] ?>"><?= $informasi['judul_informasi'] ?></a>
              </h2>
              <div class="entry-meta">
                <ul>
-                 <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle">Can nyokot ti database</a></li>
+                 <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="<?= BASEURL; ?>/informasi/informasiSingle">Admin</a></li>
                  <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <a href="<?= BASEURL; ?>/blog/blogSingle"><?= $informasi['waktu_upload'] ?></a></li>
                </ul>
              </div>

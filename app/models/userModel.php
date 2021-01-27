@@ -83,4 +83,30 @@ class userModel{
         // return $this->db->single();
     }
 
+    public function getAllFotoKegiatan(){
+        $getFotoKegiatan = $this->API->CallAPI('GET', "fotoKegiatan", "read", "");
+        $fotoKegiatan = json_encode($getFotoKegiatan);
+        $json = json_decode($fotoKegiatan, true);
+
+        $result = [
+            "body" => $json["body"],
+            "itemCount" => $json["itemCount"]
+                    ];
+
+        return $result;
+    }
+
+    public function getFotoKegiatanById($id)
+    {
+        $getFotoKegiatanById = $this->API->CallAPI('GET', "fotoKegiatan", "IdDokumentasi?ID_dokumentasi=" . $id, "");
+        $fotoKegiatan = json_encode($getFotoKegiatanById);
+        $result = json_decode($fotoKegiatan, true);
+
+        return $result;
+
+        // $this->db->query('SELECT * FROM dokumentasi WHERE ID_dokumentasi=:id');
+        // $this->db->bind('id', $id);
+        // return $this->db->single();
+    }
+
 }
